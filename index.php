@@ -507,15 +507,15 @@ table.dataTable,table.dataTable th,table.dataTable td
 <base href="/">
 
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>КШ проект 2 этапа</title>
     <base href="/">
 
-    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/mQFbj5s.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://i.imgur.com/mQFbj5s.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
     <meta name="viewport" content="width=device-width"/>
@@ -669,15 +669,15 @@ table.dataTable,table.dataTable th,table.dataTable td
              <nav class="navbar-area" color-on-scroll="red" style="background-color: white">
                 <div class="container" style="">
                     <div class="" style="display: flex">
-                        <a class="" href="#" ng-click="active='home'" style="margin-top: 7px; color: black; font-weight: 700; font-size: 25px;">Praxis</a>
+                        <a class="" href="#beginning" ng-click="active='home'" style="margin-top: 7px; color: black; font-weight: 700; font-size: 25px;">Praxis</a>
 
                         <div class="btn-group ml-2 col-2">
                           <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: none; color: black; background-color: transparent;">
                             Новости
                           </button>
                           <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#" ng-click="active='student_profile_1'">Статьи</a>
-                            <a class="dropdown-item" href="#">Медиа</a>
+                            <a class="dropdown-item" href="" ng-click="active='student_profile_1'">Статьи</a>
+                            <a class="dropdown-item" href="" >Медиа</a>
                           </div>
                         </div>  
 <!-- 
@@ -692,21 +692,21 @@ table.dataTable,table.dataTable th,table.dataTable td
                             Курсы
                           </button>
                           <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#" ng-click="active='course_description'">Каталог</a>
-                            <a class="dropdown-item" href="#">Текущий курс</a>
-                            <a class="dropdown-item" href="#">Менторы курсов</a>
+                            <a class="dropdown-item" href="" ng-click="active='course_description'">Каталог</a>
+                            <a class="dropdown-item" href="">Текущий курс</a>
+                            <a class="dropdown-item" href="">Менторы курсов</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Ожидаемые курсы</a>
+                            <a class="dropdown-item" href="">Ожидаемые курсы</a>
                           </div>
                         </div>  
                     
                         <ul class="ml-auto d-flex" style=" margin-top: 11px">
                             <?php if (Yii::app()->user->isGuest): ?>
                             <li class="nav-item" *ngIf="!isDocumentation()">
-                                <a href="#" class="projects nav-link" ng-click="active='projects'" style="color: black; font-weight: 600">Войти</a>
+                                <a href=" " class="projects nav-link" ng-click="active='projects'" style="color: black; font-weight: 600">Войти</a>
                             </li>
                             <li class="nav-item" *ngIf="!isDocumentation()">
-                                <a href="#" class="services nav-link" ng-click="active='services'" style="color: black; font-weight: 600">Регистрация</a>
+                                <a href=" " class="services nav-link" ng-click="active='services'" style="color: black; font-weight: 600">Регистрация</a>
                             </li>
                             <?php endif; ?>
                             <?php if (!Yii::app()->user->isGuest): ?>
@@ -737,7 +737,7 @@ table.dataTable,table.dataTable th,table.dataTable td
                     <h2 class="" style="font-family: 'Raleway'; font-size: 20px"> Курсы программирования с обучением на проекте. Минимум теории, максимум реального опыта и задач. Изучение языка программирования, инструментария, работа в команде под руководством ментора. </h2>
                 </div>  
                 <div class="col-sm-5 mx-auto text-center" style="margin-top: 20px"> 
-                    <button style="height: 70px; background: #6E2FFF; border-width: 0px; font-size: 22px; color: white" class="mx-auto text-center col-sm-12 btn-round">
+                    <button style="height: 70px; background: #6E2FFF; border-width: 0px; font-size: 22px; color: white" class="mx-auto text-center col-sm-12 btn-round" ng-click="active='services'">
                         Зарегистрироваться
                     </button>
                 </div>    
@@ -929,10 +929,10 @@ table.dataTable,table.dataTable th,table.dataTable td
                 </div>
             </div> 
             <div class="col-md-12 mx-auto row" style="height: 60px; margin-top: 33px">
-                <div class="col-md-9 mx-auto" style="height: 60px">
+                <div class="col-md-8 mx-auto" style="height: 60px">
 
                 </div>
-                <div class="col-md-3 mx-auto" style="height: 60px">
+                <div class="col-md-4 mx-auto" style="height: 60px">
                     <a style="font-size: 21px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_white"> Перейти в Каталог --> </a>
                 </div>
             </div>                    
@@ -1094,7 +1094,7 @@ table.dataTable,table.dataTable th,table.dataTable td
                           <h5 class="card-title">Игорь Перчаткин</h5>
                           <p class="card-text text-secondary">UI/UX дизайнер</p>
                           <p class="card-text" align="justify">Люблю делать мир лучше, детей и больше всего свою работу! Занимаюсь в основном творческими проектами, по типу АртХаус...</p>
-                          <a href="#" class="card-text">Перейти в профиль</a>
+                          <a href="" ng-click="active='mentor_profile'" class="card-text">Перейти в профиль</a>
                         </div>
                       </div>
                       <div class="card">
@@ -1106,7 +1106,7 @@ table.dataTable,table.dataTable th,table.dataTable td
                           <h5 class="card-title">Игорь Перчаткин</h5>
                           <p class="card-text text-secondary">UI/UX дизайнер</p>
                           <p class="card-text" align="justify">Люблю делать мир лучше, детей и больше всего свою работу! Занимаюсь в основном творческими проектами, по типу АртХаус...</p>
-                          <a href="#" class="card-text">Перейти в профиль</a>
+                          <a href="" ng-click="active='mentor_profile'" class="card-text">Перейти в профиль</a>
                         </div>
                       </div>
                       <div class="card">
@@ -1118,7 +1118,7 @@ table.dataTable,table.dataTable th,table.dataTable td
                           <h5 class="card-title">Игорь Перчаткин</h5>
                           <p class="card-text text-secondary">UI/UX дизайнер</p>
                           <p class="card-text" align="justify">Люблю делать мир лучше, детей и больше всего свою работу! Занимаюсь в основном творческими проектами, по типу АртХаус...</p>
-                          <a href="#" class="card-text">Перейти в профиль</a>
+                          <a href="" ng-click="active='mentor_profile'" class="card-text">Перейти в профиль</a>
                         </div>
                       </div>
                     </div>
@@ -1134,7 +1134,7 @@ table.dataTable,table.dataTable th,table.dataTable td
                           <h5 class="card-title">Игорь Перчаткин</h5>
                           <p class="card-text text-secondary">UI/UX дизайнер</p>
                           <p class="card-text" align="justify">Люблю делать мир лучше, детей и больше всего свою работу! Занимаюсь в основном творческими проектами, по типу АртХаус...</p>
-                          <a href="#" class="card-text">Перейти в профиль</a>
+                          <a href=" " class="card-text">Перейти в профиль</a>
                         </div>
                       </div>
                       <div class="card">
@@ -1146,7 +1146,7 @@ table.dataTable,table.dataTable th,table.dataTable td
                           <h5 class="card-title">Игорь Перчаткин</h5>
                           <p class="card-text text-secondary">UI/UX дизайнер</p>
                           <p class="card-text" align="justify">Люблю делать мир лучше, детей и больше всего свою работу! Занимаюсь в основном творческими проектами, по типу АртХаус...</p>
-                          <a href="#" class="card-text">Перейти в профиль</a>
+                          <a href=" " class="card-text">Перейти в профиль</a>
                         </div>
                       </div>
                       <div class="card">
@@ -1158,7 +1158,7 @@ table.dataTable,table.dataTable th,table.dataTable td
                           <h5 class="card-title">Игорь Перчаткин</h5>
                           <p class="card-text text-secondary">UI/UX дизайнер</p>
                           <p class="card-text" align="justify">Люблю делать мир лучше, детей и больше всего свою работу! Занимаюсь в основном творческими проектами, по типу АртХаус...</p>
-                          <a href="#" class="card-text">Перейти в профиль</a>
+                          <a href=" " class="card-text">Перейти в профиль</a>
                         </div>
                       </div>
                     </div>
@@ -1182,7 +1182,7 @@ table.dataTable,table.dataTable th,table.dataTable td
 </div>
 
         
-<div ng-show="active=='projects'">
+<div ng-show="active=='projects'" class="fade-in">
     
                 <?php
                     /* @var $this SiteController */
@@ -1259,7 +1259,7 @@ table.dataTable,table.dataTable th,table.dataTable td
             </div>
     </div>
 
-<div ng-show="active=='services'">
+<div ng-show="active=='services'" class="fade-in">
                     
                     <?php
                     /* @var $this SiteController */
@@ -1747,10 +1747,10 @@ table.dataTable,table.dataTable th,table.dataTable td
                 </div>
             </div> 
             <div class="col-md-12 mx-auto row" style="height: 60px; margin-top: 33px">
-                <div class="col-md-9 mx-auto" style="height: 60px">
+                <div class="col-md-8 mx-auto" style="height: 60px">
 
                 </div>
-                <div class="col-md-3 mx-auto" style="height: 60px">
+                <div class="col-md-4 mx-auto" style="height: 60px">
                     <a style="font-size: 21px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_white"> Перейти в Каталог --> </a>
                 </div>
             </div>                    
@@ -1884,7 +1884,7 @@ table.dataTable,table.dataTable th,table.dataTable td
     <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
       <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active bg-light">
+        <a href=" " class="list-group-item list-group-item-action active bg-light">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">KidCode: Сделать авторизацию на сайте</h5>
             <small>3 days ago</small>
@@ -1892,7 +1892,7 @@ table.dataTable,table.dataTable th,table.dataTable td
           <p class="mb-1 clr_black">Использовать PHP, результат залить в хостинг и отправить в виде ссылки.</p>
           
         </a>
-        <a href="#" class="list-group-item list-group-item-action active bg-light">
+        <a href=" " class="list-group-item list-group-item-action active bg-light">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">KidCode: Сделать макет сайта</h5>
             <small class="text-muted">3 days ago</small>
@@ -1900,7 +1900,7 @@ table.dataTable,table.dataTable th,table.dataTable td
           <p class="mb-1 clr_black">На графическом редакторе Figma сделать страницы (4) по плану из FAQ.</p>
           
         </a>
-        <a href="#" class="list-group-item list-group-item-action active bg-light">
+        <a href=" " class="list-group-item list-group-item-action active bg-light">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">KidCode: Пофиксить баги на разделе “О команде”</h5>
             <small class="text-muted">3 days ago</small>
@@ -1908,7 +1908,7 @@ table.dataTable,table.dataTable th,table.dataTable td
           <p class="mb-1 clr_black">Найти в коде ошибку (GitHub) и исправить её</p>
           
         </a>
-        <a href="#" class="list-group-item list-group-item-action active bg-light">
+        <a href=" " class="list-group-item list-group-item-action active bg-light">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">KidCode: Сделать Front-end сайта</h5>
             <small class="text-muted">3 days ago</small>
@@ -1921,7 +1921,7 @@ table.dataTable,table.dataTable th,table.dataTable td
     </div>
     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
       <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active bg-light">
+        <a href=" " class="list-group-item list-group-item-action active bg-light">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">KidCode: Сделать авторизацию на сайте</h5>
             <small>3 days ago</small>
@@ -1929,7 +1929,7 @@ table.dataTable,table.dataTable th,table.dataTable td
           <p class="mb-1 clr_black">Использовать PHP, результат залить в хостинг и отправить в виде ссылки.</p>
           
         </a>
-        <a href="#" class="list-group-item list-group-item-action active bg-light">
+        <a href=" " class="list-group-item list-group-item-action active bg-light">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">KidCode: Сделать макет сайта</h5>
             <small class="text-muted">3 days ago</small>
@@ -1937,7 +1937,7 @@ table.dataTable,table.dataTable th,table.dataTable td
           <p class="mb-1 clr_black">На графическом редакторе Figma сделать страницы (4) по плану из FAQ.</p>
           
         </a>
-        <a href="#" class="list-group-item list-group-item-action active bg-light">
+        <a href=" " class="list-group-item list-group-item-action active bg-light">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">KidCode: Пофиксить баги на разделе “О команде”</h5>
             <small class="text-muted">3 days ago</small>
@@ -1945,7 +1945,7 @@ table.dataTable,table.dataTable th,table.dataTable td
           <p class="mb-1 clr_black">Найти в коде ошибку (GitHub) и исправить её</p>
           
         </a>
-        <a href="#" class="list-group-item list-group-item-action active bg-light">
+        <a href=" " class="list-group-item list-group-item-action active bg-light">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">KidCode: Сделать Front-end сайта</h5>
             <small class="text-muted">3 days ago</small>
@@ -1958,7 +1958,7 @@ table.dataTable,table.dataTable th,table.dataTable td
     </div>
     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
       <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active bg-light">
+        <a href=" " class="list-group-item list-group-item-action active bg-light">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">KidCode: Сделать авторизацию на сайте</h5>
             <small>3 days ago</small>
@@ -1966,7 +1966,7 @@ table.dataTable,table.dataTable th,table.dataTable td
           <p class="mb-1 clr_black">Использовать PHP, результат залить в хостинг и отправить в виде ссылки.</p>
           
         </a>
-        <a href="#" class="list-group-item list-group-item-action active bg-light">
+        <a href=" " class="list-group-item list-group-item-action active bg-light">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">KidCode: Сделать макет сайта</h5>
             <small class="text-muted">3 days ago</small>
@@ -1974,7 +1974,7 @@ table.dataTable,table.dataTable th,table.dataTable td
           <p class="mb-1 clr_black">На графическом редакторе Figma сделать страницы (4) по плану из FAQ.</p>
           
         </a>
-        <a href="#" class="list-group-item list-group-item-action active bg-light">
+        <a href=" " class="list-group-item list-group-item-action active bg-light">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">KidCode: Пофиксить баги на разделе “О команде”</h5>
             <small class="text-muted">3 days ago</small>
@@ -1982,7 +1982,7 @@ table.dataTable,table.dataTable th,table.dataTable td
           <p class="mb-1 clr_black">Найти в коде ошибку (GitHub) и исправить её</p>
           
         </a>
-        <a href="#" class="list-group-item list-group-item-action active bg-light">
+        <a href=" " class="list-group-item list-group-item-action active bg-light">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">KidCode: Сделать Front-end сайта</h5>
             <small class="text-muted">3 days ago</small>
@@ -2059,7 +2059,7 @@ table.dataTable,table.dataTable th,table.dataTable td
                                     Редактировать
                                 </button>
 
-                               <a class="btn btn-primary" href="http://yii1/mpit-backend-2021-prod/index.php/site/logout">
+                               <a class="btn btn-primary" href="/mpit-backend-2021/index.php/site/logout">
                                     Выйти из аккаунта
                                 </a>
 
@@ -2265,7 +2265,7 @@ table.dataTable,table.dataTable th,table.dataTable td
 <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
       <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active bg-light">
+        <a href=" " class="list-group-item list-group-item-action active bg-light">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Язык Программирования C++/C</h5>
             <small class="text-muted">3 days ago</small>
@@ -2275,7 +2275,7 @@ table.dataTable,table.dataTable th,table.dataTable td
           </div>
           
         </a>
-        <a href="#" class="list-group-item list-group-item-action active bg-light">
+        <a href=" " class="list-group-item list-group-item-action active bg-light">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Язык Программирования Python/Ruby</h5>
             <small class="text-muted">3 days ago</small>
@@ -2285,7 +2285,7 @@ table.dataTable,table.dataTable th,table.dataTable td
           </div>
           
         </a>
-        <a href="#" class="list-group-item list-group-item-action active bg-light">
+        <a href=" " class="list-group-item list-group-item-action active bg-light">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Язык Разметки HTML/XHTML/XML</h5>
             <small class="text-muted">3 days ago</small>
@@ -2782,95 +2782,131 @@ table.dataTable,table.dataTable th,table.dataTable td
 
 <!-- Профиль ментора -->
 <div ng-show="active=='mentor_profile'">
-                  <div class="wrapper fade-in">
-    <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('https://pbs.twimg.com/media/Ew-5s1LXAAITpSL.jpg');">
-        <div class="filter"></div>
+<div class="wrapper fade-in">
+    <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('https://i.imgur.com/XQgwfEe.png'); z-index: 1">
+        <div class="col-md-9 mx-auto">
+            <h1 class="heading clr_white" style="font-weight: bold"> Профиль Ментора </h1>    
+        </div>
     </div>
     <div class=" profile-content">
         <div class="container">
-            <div class="owner">
-                <div class="avatar">
-                    <img src="https://i.imgur.com/CERWXSK.png" alt="Circle Image" class="img-circle img-no-padding img-responsive" style="height: 150px; width: 150px">
-                </div>
+            <div class="owner">     
+                <img src="https://i.imgur.com/CERWXSK.png" alt="" class="img-circle img-no-padding img-responsive" style="height: 340px; width: 340px; margin-top: 40px">
                 <div class="name">
-                    <h1 style="margin-top: 4px" class="title_custom"> Игорь Перчаткин </h1>
-                    <h3 style="margin-top: 6px" class="description clr_black">Дизайнер UI/UX</h3>
+                    <h1 style="margin-top: 4px" class="heading"> Игорь Перчаткин </h1>
+                    <h3 style="margin-top: 6px" class="description clr_white">Дизайнер UI/UX</h3>
                 </div>
-                <div class="row mx-auto col-md-5" style="margin-top: 20px">
+                <div class="row mx-auto col-md-4" style="margin-top: 20px">
                     
-                        <img src="https://pbs.twimg.com/media/Ew-5s1LXAAITpSL.jpg" style="height:70px; width: 70px" class="img-circle img-responsive img-no-padding mx-auto">
+                        <img src="https://i.imgur.com/mJzEWWt.png" style="height:70px; width: 70px;" class="img-circle img-responsive img-no-padding mx-auto">
                     
                     
-                        <img src="https://pbs.twimg.com/media/Ew-5s1LXAAITpSL.jpg" style="height:70px; width: 70px" class="img-circle img-responsive img-no-padding mx-auto">
+                        <img src="https://i.imgur.com/DDFV4Ga.png" style="height:70px; width: 70px" class="img-circle img-responsive img-no-padding mx-auto">
                    
                     
-                        <img src="https://pbs.twimg.com/media/Ew-5s1LXAAITpSL.jpg" style="height:70px; width: 70px" class="img-circle img-responsive img-no-padding mx-auto">
+                        <img src="https://i.imgur.com/z5Di3d7.png" style="height:70px; width: 70px" class="img-circle img-responsive img-no-padding mx-auto">
                     
                     
-                        <img src="https://pbs.twimg.com/media/Ew-5s1LXAAITpSL.jpg" style="height:70px; width: 70px" class="img-circle img-responsive img-no-padding mx-auto">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Adobe_After_Effects_CC_icon.svg/1200px-Adobe_After_Effects_CC_icon.svg.png" style="height:70px; width: 70px" class="img-circle img-responsive img-no-padding mx-auto">
                     
                 </div>
                 <div class="text-center mx-auto col-md-8" style="margin-top: 20px">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    <p class="clr_white" style="font-size: 20px"> Люблю делать мир лучше, детей и больше всего свою работу! Занимаюсь в основном творческими проектами, по типу АртХаус. Девиз по жизни... его нет, но мой стакан всегда наполовину полон!  </p>
                 </div>
                 <div class="mx-auto col-md-12" style="padding-top: 50px">
                     <div class="col-md-8 mx-auto"> 
                         <ul class="nav nav-tabs" id="product" role="tablist">
                           <li class="nav-item mx-auto">
-                            <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description1" role="tab" aria-controls="description1" aria-selected="true">Опыт Работы</a>
+                            <a class=" active clr_white" id="description-tab" data-toggle="tab" href="#description1" role="tab" aria-controls="description1" aria-selected="true">Опыт Работы</a>
                           </li> 
                           <li class="nav-item mx-auto">
-                            <a class="nav-link" id="home-tab" data-toggle="tab" href="#home7" role="tab" aria-controls="home7" aria-selected="false">Отзывы(ДЛИННА МАССИВВА РНР)</a>
+                            <a class=" clr_white" id="home-tab" data-toggle="tab" href="#home7" role="tab" aria-controls="home7" aria-selected="false">Отзывы</a>
                           </li>
                         </ul>
                     </div>    
                     <div class="tab-content" id="product-content" style="margin-top: 60px">
                       <div class="tab-pane fade show active" id="description1" role="tabpanel" aria-labelledby="description-tab">
                         <div class="mx-auto col-md-12 " style="">
-                            <div class="mx-auto col-md-7 rounded row" style="height: 100px; ">
-                                <div class="col-md-3 bg-secondary" style="height: 90px">
-                                    
+                            <div class="mx-auto col-md-6 row bg-dark " style="height: 100px; border-radius: 30px; border-width: 2px; border-style: solid; border-color: white; ">
+                                <div class="col-md-3 " style="height: 90px; padding: 0px">
+                                    <img src="https://openthread.google.cn/images/ot-contrib-google.png" style="padding: 0px; margin-top: 13px" class="col-12">
                                 </div>
-                                <div class="col-md-9 bg-danger" style="height: 90px; text-align: left">
-                                    <h2 style="margin-top: 3px; font-size: 24px; font-weight: bold;" class="clr_black"> Позиция На Работе </h2>
-                                    <p style="font-size: 19px; " class="clr_black"> Компания </p>
-                                    <p style="font-size: 17px; " class=""> Сент 2018 - Настоящее время . 32 месяца </p>
-                                </div>
-                            </div>
-
-                            <div class="mx-auto col-md-7 rounded row" style="height: 100px; ">
-                                <div class="col-md-3 bg-secondary" style="height: 90px">
-                                    
-                                </div>
-                                <div class="col-md-9 bg-danger" style="height: 90px; text-align: left">
-                                    <h2 style="margin-top: 3px; font-size: 24px; font-weight: bold;" class="clr_black"> Позиция На Работе </h2>
-                                    <p style="font-size: 19px; " class="clr_black"> Компания </p>
-                                    <p style="font-size: 17px; " class=""> Сент 2018 - Настоящее время . 32 месяца </p>
+                                <div class="col-md-9 " style="height: 90px; text-align: left">
+                                    <h2 style="margin-top: 3px; font-size: 24px; font-weight: bold;" class="clr_white"> Дизайнер </h2>
+                                    <p style="font-size: 19px; " class="clr_white"> Google </p>
+                                    <p style="font-size: 17px; " class="clr_white"> С Сентября 2018 . 32 месяца </p>
                                 </div>
                             </div>
 
-                            <div class="col-md-12 mx-auto">
-                                <h1 class="title_custom" style="padding-bottom: 20px"> Портфоио </h1>
-                                <div class="row mx-auto col-md-10" style="">
-                                    <div class="col-md-4 mx-auto img-no-padding" style="height: 360px; background-image: url(https://i.imgur.com/5OXItVa.png); background-size: 100% 100%; padding-top: 230px">
-                                        <h1 style="margin-top: 3px; font-size: 24px; font-weight: bold;" class="clr_black"> Название работы </h1>
-                                        <p> Мини-описание, цель и задумка </p>
-                                    </div>
-                                    <div class="col-md-4 mx-auto img-no-padding" style="height: 360px; background-image: url(https://i.imgur.com/5OXItVa.png); background-size: 100% 100%; padding-top: 230px">
-                                        <h1 style="margin-top: 3px; font-size: 24px; font-weight: bold;" class="clr_black"> Название работы </h1>
-                                        <p> Мини-описание, цель и задумка </p>
-                                    </div>
-                                    <div class="col-md-4 mx-auto img-no-padding" style="height: 360px; background-image: url(https://i.imgur.com/5OXItVa.png); background-size: 100% 100%; padding-top: 230px">
-                                        <h1 style="margin-top: 3px; font-size: 24px; font-weight: bold;" class="clr_black"> Название работы </h1>
-                                        <p> Мини-описание, цель и задумка </p>
-                                    </div>
+                            <div class="mx-auto col-md-6 row bg-dark " style="height: 100px; border-radius: 30px; border-width: 2px; border-style: solid; border-color: white; margin-top: 30px">
+                                <div class="col-md-3 " style="height: 90px; padding: 0px">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/1024px-HP_logo_2012.svg.png" style="padding: 0px; margin-top: 7px" class="col-8 mx-auto">
+                                </div>
+                                <div class="col-md-9 " style="height: 90px; text-align: left">
+                                    <h2 style="margin-top: 3px; font-size: 24px; font-weight: bold;" class="clr_white"> Главный Дизайнер </h2>
+                                    <p style="font-size: 19px; " class="clr_white"> HP </p>
+                                    <p style="font-size: 17px; " class="clr_white"> Январь 2017 - Июнь 2018. </p>
                                 </div>
                             </div>
+
+                            <h1 class="clr_white heading" align="center" style="font-weight: bold"> Портфолио </h1>
+        <div class="mx-auto row" style="margin-top: 25px; padding-bottom: 150px">
+                <div class="col-md-4 mx-auto" style="height: 290px">
+                    <div class="col-md-12 mx-auto " style="height: 290px; border-radius: 20px; background-image: url('https://i.imgur.com/ROaWII9.png');">
+                        <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
+                        <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
+
+                        <div class="w-100 row ">
+                            <div class="col-md-3" style="height:60px; padding-right: 0px">
+                                <img src="https://i.imgur.com/ab58dDp.png" class="img-circle img-no-padding img-responsive">
+                            </div>
+                            <div class="col-md-9" style="height: 60px; padding-left: 0px; padding-right: 0px">
+                                <p class="clr_black" style="font-size: 16px"> Ментор: Андрей Костюшко </p>
+                                <p class="clr_violet" style="font-size: 15px; line-height: 8px"> Репутация: 3621 звёзд </p>
+
+                            </div>
+                        </div>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mx-auto" style="height: 290px">
+                    <div class="col-md-12 mx-auto" style="height: 290px; border-radius: 20px; background-image: url('https://i.imgur.com/gfGGrIM.png');">
+                        <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
+                        <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
+
+                        <div class="w-100 row ">
+                            <div class="col-md-3" style="height:60px; padding-right: 0px">
+                                <img src="https://i.imgur.com/ab58dDp.png" class="img-circle img-no-padding img-responsive">
+                            </div>
+                            <div class="col-md-9" style="height: 60px; padding-left: 0px; padding-right: 0px">
+                                <p class="clr_black" style="font-size: 16px"> Ментор: Андрей Костюшко </p>
+                                <p class="clr_violet" style="font-size: 15px; line-height: 8px"> Репутация: 3621 звёзд </p>
+
+                            </div>
+                        </div>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mx-auto" style="height: 290px">
+                    <div class="col-md-12 mx-auto " style="height: 290px; border-radius: 20px; background-image: url('https://i.imgur.com/JDVH6Ot.png');">
+                        <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
+                        <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
+
+                        <div class="w-100 row ">
+                            <div class="col-md-3" style="height:60px; padding-right: 0px">
+                                <img src="https://i.imgur.com/ab58dDp.png" class="img-circle img-no-padding img-responsive">
+                            </div>
+                            <div class="col-md-9" style="height: 60px; padding-left: 0px; padding-right: 0px">
+                                <p class="clr_black" style="font-size: 16px"> Ментор: Андрей Костюшко </p>
+                                <p class="clr_violet" style="font-size: 15px; line-height: 8px"> Репутация: 3621 звёзд </p>
+
+                            </div>
+                        </div>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                    </div>
+                </div>
+
+            </div>
 
                             
                         </div>
@@ -2945,7 +2981,7 @@ table.dataTable,table.dataTable th,table.dataTable td
 </div>
 
 <!-- Покупка курса -->
-<div ng-show="active=='course_order'">
+<div ng-show="active=='course_order'" class="fade-in">
       <div class="container">
   <div class="py-5 text-center">
     <img class="d-block mx-auto mb-4 img-rounded" src="https://cdn.discordapp.com/attachments/760372831946670104/840055983053340702/unknown.png" alt="" width="80px" height="">
@@ -3263,33 +3299,33 @@ div.total span{
       <div class="col-6 col-md">
         <h5 style="color: white; font-weight: 600">Быстрые ссылки</h5>
         <ul class="list-unstyled text-small">
-          <li><a style="color: white;"class="" href="#">Курсы</a></li>
-          <li><a style="color: white" class="" href="#">Команда</a></li>
-          <li><a style="color: white" class="" href="#">События</a></li>
-          <li><a style="color: white" class="" href="#">Блог</a></li>
-          <li><a style="color: white" class="" href="#">Личный кабинет</a></li>
+          <li><a style="color: white;"class="" href=" ">Курсы</a></li>
+          <li><a style="color: white" class="" href=" ">Команда</a></li>
+          <li><a style="color: white" class="" href=" ">События</a></li>
+          <li><a style="color: white" class="" href=" ">Блог</a></li>
+          <li><a style="color: white" class="" href=" ">Личный кабинет</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">
         <h5 style="color: white; font-weight: 600" >Услуги</h5>
         <ul class="list-unstyled text-small">
-          <li><a style="color: white" class="" href="#">UX/UI дизайн</a></li>
-          <li><a style="color: white" class="" href="#">Разработка приложений</a></li>
-          <li><a style="color: white" class="" href="#">Веб-разработка</a></li>
-          <li><a style="color: white" class="" href="#">Гарантия качества</a></li>
-          <li><a style="color: white" class="" href="#">Машинное обучение</a></li>
+          <li><a style="color: white" class="" href=" ">UX/UI дизайн</a></li>
+          <li><a style="color: white" class="" href=" ">Разработка приложений</a></li>
+          <li><a style="color: white" class="" href=" ">Веб-разработка</a></li>
+          <li><a style="color: white" class="" href=" ">Гарантия качества</a></li>
+          <li><a style="color: white" class="" href=" ">Машинное обучение</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">
         <h5 style="color: white; font-weight: 600">Контакты</h5>
         <ul class="list-unstyled text-small">
-          <li><a style="color: white" class="" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+          <li><a style="color: white" class="" href=" "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
   <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
 </svg> hello@praxis.co</a></li>
-          <li><a style="color: white" class="" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+          <li><a style="color: white" class="" href=" "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
   <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
 </svg> +7 924 599-61-00</a></li>
-          <li><a style="color: white" class="" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+          <li><a style="color: white" class="" href=" "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
   <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
 </svg> Пр. Ленина, Д. 1, Якутск, РС(Я) 677000</a></li>
         </ul>
@@ -3301,9 +3337,9 @@ div.total span{
             <p class="text-light">© 2021 Praxis UI/UX Design. Все права защищены</p>
         </div>
         <div class="col-6">
-            <a style="color: white" class="" href="#">Условия & Политика   |   </a>
-            <a style="color: white" class="" href="#">Конфиденциальность  |   </a>
-            <a style="color: white" class="" href="#">Карта сайта</a>
+            <a style="color: white" class="" href=" ">Условия & Политика   |   </a>
+            <a style="color: white" class="" href=" ">Конфиденциальность  |   </a>
+            <a style="color: white" class="" href=" ">Карта сайта</a>
         </div>
     </div>
   </footer>
