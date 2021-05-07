@@ -145,6 +145,9 @@ class SiteController extends Controller
 				if($_POST['Users']['profession'] != null)
 					$existed_model->profession=$_POST['Users']['profession'];
 
+				if($_POST['Users']['avatar_link'] != null)
+					$existed_model->avatar_link=$_POST['Users']['avatar_link'];
+
 				if($existed_model->save(false)) {
 					$this->redirect(array('/site/index'));
 				}
