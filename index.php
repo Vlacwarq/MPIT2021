@@ -1,9 +1,16 @@
+
 <!--     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+   $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 
 <!-- Классы для интерактивных таблиц -->
     <style type="text/css">
@@ -285,7 +292,7 @@ table.dataTable,table.dataTable th,table.dataTable td
 }
 .dataTables_wrapper .dataTables_length select
 {
-    background-color: transparent;
+    background-color: white;
     border: 1px solid #aaa;
     border-radius: 3px;
     padding: 4px;
@@ -298,7 +305,7 @@ table.dataTable,table.dataTable th,table.dataTable td
 }
 .dataTables_wrapper .dataTables_filter input
 {
-    background-color: transparent;
+    background-color: white;
     border: 1px solid #aaa;
     border-radius: 3px;
     margin-left: 3px;
@@ -341,14 +348,14 @@ table.dataTable,table.dataTable th,table.dataTable td
     background: -webkit-linear-gradient(top, white 0%, #dcdcdc 100%);
     background-color: white;
     border: 1px solid #979797;
-    color: #333 !important;
+    color: purple !important;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled,.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active
 {
     background: transparent;
     border: 1px solid transparent;
     box-shadow: none;
-    color: #666 !important;
+    color: cyan !important;
     cursor: default;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover
@@ -401,7 +408,7 @@ table.dataTable,table.dataTable th,table.dataTable td
 }
 .dataTables_wrapper .dataTables_length,.dataTables_wrapper .dataTables_filter,.dataTables_wrapper .dataTables_info,.dataTables_wrapper .dataTables_processing,.dataTables_wrapper .dataTables_paginate
 {
-    color: #333;
+    color: #ED088D;
 }
 .dataTables_wrapper .dataTables_scroll
 {
@@ -469,6 +476,9 @@ table.dataTable,table.dataTable th,table.dataTable td
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+
   <!-- Для локальной стилизации -->
   <script src="https://mylessons.acwarq.repl.co/hackathon/scoped.min.js"></script>
   <!-- ТОСТ СООБЩЕНИЕ исчезающее (скрипт) -->
@@ -514,11 +524,7 @@ table.dataTable,table.dataTable th,table.dataTable td
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
 
 <style type="text/css">
-    @font-face {
-      font-family: "MachinaR";
-      src: url("/assets1/fontsNeueMachina-Regular.ttf");
-          
-    }
+
 
     .sidebar {
         position: absolute;
@@ -660,21 +666,18 @@ table.dataTable,table.dataTable th,table.dataTable td
 <nav class="{{active}}" ng-click="$event.preventDefault()" style="">
 
 
-             <nav class="navbar-area" color-on-scroll="red">
+             <nav class="navbar-area" color-on-scroll="red" style="background-color: white">
                 <div class="container" style="">
                     <div class="" style="display: flex">
-                        <a class="" href="#" ng-click="active='home'" style="margin-top: 13px; color: black; font-weight: 700; font-size: 25px">Praxis</a>
+                        <a class="" href="#" ng-click="active='home'" style="margin-top: 7px; color: black; font-weight: 700; font-size: 25px;">Praxis</a>
 
                         <div class="btn-group ml-2 col-2">
-                          <button type="button" class="btn bg-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: none; color: black; ">
+                          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: none; color: black; background-color: transparent;">
                             Новости
                           </button>
                           <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
+                            <a class="dropdown-item" href="#" ng-click="active='student_profile_1'">Статьи</a>
+                            <a class="dropdown-item" href="#">Медиа</a>
                           </div>
                         </div>  
 <!-- 
@@ -685,15 +688,15 @@ table.dataTable,table.dataTable th,table.dataTable td
                         </div>   --> 
 
                         <div class="btn-group">
-                          <button type="button" class="btn bg-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: none; color: black">
-                            О нас
+                          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: none; color: black; background-color: transparent;">
+                            Курсы
                           </button>
                           <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#" ng-click="active='course_description'">Каталог</a>
+                            <a class="dropdown-item" href="#">Текущий курс</a>
+                            <a class="dropdown-item" href="#">Менторы курсов</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
+                            <a class="dropdown-item" href="#">Ожидаемые курсы</a>
                           </div>
                         </div>  
                     
@@ -708,7 +711,7 @@ table.dataTable,table.dataTable th,table.dataTable td
                             <?php endif; ?>
                             <?php if (!Yii::app()->user->isGuest): ?>
                             <li class="nav-item" *ngIf="!isDocumentation()">
-                                <a href="http://yii1:83/mpit-backend-2021-prod/index.php/site/index?username=sardaana" class="" ng-click="active='student_profile_2'" ng-href="{{active}}" id="test" style="color: black">Личный кабинет <?php echo Yii::app()->user->name?> </a>
+                                <a href="http://yii1:83/mpit-backend-2021-prod/index.php/site/index?username=sardaana" class="" ng-click="active='student_profile_2'" ng-href="{{active}}" id="test" style="color: black; font-size: 18px;font-weight: 600">Личный кабинет: <?php echo Yii::app()->user->name?> </a>
                             </li>
                             <?php endif; ?>
                                             
@@ -721,19 +724,6 @@ table.dataTable,table.dataTable th,table.dataTable td
 
         </nav>
 
-
-
-<!-- Тестовые ссылки на SPA-страницы -->
-<a href="" class="services nav-link" ng-click="active='course_description'" style="margin-top: 100px; ">Описание курса</a>
-<a href="" class="services nav-link" ng-click="active='student_profile_1'" style="">Профиль ученика 1 (новсти и т.д.)</a>
-<a href="" class="services nav-link" ng-click="active='student_profile_2'" style="">Профиль ученика 2 (навыки, портфолио и т.д.)</a>
-<a href="" class="services nav-link" ng-click="active='student_profile_3'" style="">Профиль ученика 3 (задачи)</a>
-<a href="" class="services nav-link" ng-click="active='student_profile_4'" style="">Профиль ученика 4 (рейтинг учеников)</a>
-<a href="" class="services nav-link" ng-click="active='student_profile_5'" style="">Профиль ученика 5 (уведомления ученика)</a>
-<a href="" class="services nav-link" ng-click="active='mentor_profile'" style="">Профиль ментора</a>
-<a href="" class="services nav-link" ng-click="active='course_order'" style="">Заказ курса</a>
-
-
 <!-- ГЛАВНАЯ СТРАНИЦА -->
 <div ng-show="active==null || active=='home'">
 <div class="wrapper fade-in" id="beginning">
@@ -742,13 +732,13 @@ table.dataTable,table.dataTable th,table.dataTable td
             <div class="container">
                 <div class="col-md-9 mx-auto " style="margin-top: 410px">
                     <div class="">
-                        <h1 class="clr_black" style="font-size: 70px; font-family: 'Raleway' ">Будь Практичным. <br> Будь Специалистом.</h1>   
+                        <h1 class="clr_black" style="font-size: 70px; font-family: 'Raleway'; font-weight: 900 ">Будь Практичным. <br> Будь Специалистом.</h1>   
                     </div>
                     <h2 class="" style="font-family: 'Raleway'; font-size: 20px"> Курсы программирования с обучением на проекте. Минимум теории, максимум реального опыта и задач. Изучение языка программирования, инструментария, работа в команде под руководством ментора. </h2>
                 </div>  
                 <div class="col-sm-5 mx-auto text-center" style="margin-top: 20px"> 
                     <button style="height: 70px; background: #6E2FFF; border-width: 0px; font-size: 22px; color: white" class="mx-auto text-center col-sm-12 btn-round">
-                        Записаться На Курс!
+                        Зарегистрироваться
                     </button>
                 </div>    
             </div>
@@ -762,18 +752,18 @@ table.dataTable,table.dataTable th,table.dataTable td
               
               <div class="row" style="">
                   <div class="col-md-5 mr-auto ml-auto" style="background-image: url('https://i.imgur.com/Fd8Xfh6.png');background-size: 100% 100%">
-                     <h1 class="heading" align="justify">
-                      Что такое Praxis и для чего он предназначен 
+                     <h1 class="heading" align="justify" style="font-weight: bold">
+                      🎩 Что такое Praxis и с чем его едят
                     </h1>
                     <p class="clr_white" align="justify">
                       Освоение IT-специальности - это путь длиной в жизнь. Обучение программированию на практике эффективнее - вы получаете практические знания, «без воды»; применяй и трудоустраивают. Задача курсов - дать удочку и научить ловить свою первую рыбу. Теорию рыбалки придется постигать параллельно, совершенствуя мастерство год за годом. 
                       Ментор - это наставник, который помогает подопечному осваивать профессию.
                     </p> 
-                    <a class="clr_white" style="margin-top: 20px"> Перейти в Каталог --> </a>
+                    <a class="clr_white " style="margin-top: 20px; font-size: 25px;font-weight: bold"> Перейти в Каталог --> </a>
                   </div>
                   <div class="col-md-7 mx-auto">
                     <div class="col-md-12 ">  
-                      <img src="https://i.imgur.com/cN0eUrB.png" style=" border-radius: 40px; margin-top: 10px" class="col-md-12 img-responsive">
+                      <img src="https://i.imgur.com/cN0eUrB.png" style=" border-radius: 40px; margin-top: 10px; " class="col-md-12 img-responsive">
                     </div>
                   </div>
 
@@ -781,16 +771,14 @@ table.dataTable,table.dataTable th,table.dataTable td
           </div>
       </div>
       <!-- Partners -->
-      <div class="section" style="padding-top: 10px" id="description">
+      <div class="section" style="padding-top: 10px; padding-bottom: 15px" id="description" >
         <div class="container w-100 " style="background-image: url('https://i.imgur.com/HbEEwM6.png'); background-size: 100% 100%; padding-bottom: 150px"> 
-          <h1 class="text-center heading" >
-            Наши Партнёры
+          <h1 class="text-center heading" style="font-weight: bold">
+            Наши партнеры 💥
           </h1>
           <div class="col-md-10 mx-auto" style="padding-top: 12px">  
-            <p class="text-center clr_white"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptat 
+            <p class="text-center clr_white"> 
+                Менторами проектов являются действующие специалисты таких компаний как Google, Accenture, IBM, которые имеют богатый практический опыт и являются лидерами современного рынка
             </p>
           </div>
           <!-- Partners parent div -->
@@ -821,14 +809,14 @@ table.dataTable,table.dataTable th,table.dataTable td
       <!-- Актуальные Кейсы -->
       <div class="section mx-auto" style="padding-top: 30px">
         <div class="container mx-auto" style="background-image: url('https://i.imgur.com/MJ0GQjU.png'); background-size: 100% 100%">
-          <h1 class="text-center heading clr_white" style="padding-top: 0px"> Актуальные Курсы </h1>
+          <h1 class="text-center heading clr_white" style="padding-top: 0px; font-weight: bold"> Актуальные Кейсы </h1>
           <div class="col-md-8 text-center mx-auto" style="">
             <p class="subtitle clr_white" style="padding-top: 8px"> Подборка проектов, которые могут понравиться Вашему ребенку: </p>
           </div>
           <div class="col-md-12 mx-auto" style="margin-top: 20px; height:650px">
             <div class="mx-auto row" style="margin-top: 25px">
                 <div class="col-md-4 mx-auto" style="height: 290px">
-                    <div class="col-md-12 mx-auto bg-primary" style="height: 290px; border-radius: 20px">
+                    <div class="col-md-12 mx-auto " style="height: 290px; border-radius: 20px; background-image: url('https://i.imgur.com/ROaWII9.png');">
                         <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
                         <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
 
@@ -842,11 +830,11 @@ table.dataTable,table.dataTable th,table.dataTable td
 
                             </div>
                         </div>
-                        <p class="text-secondary" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
                     </div>
                 </div>
                 <div class="col-md-4 mx-auto" style="height: 290px">
-                    <div class="col-md-12 mx-auto bg-primary" style="height: 290px; border-radius: 20px">
+                    <div class="col-md-12 mx-auto" style="height: 290px; border-radius: 20px; background-image: url('https://i.imgur.com/gfGGrIM.png');">
                         <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
                         <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
 
@@ -860,11 +848,11 @@ table.dataTable,table.dataTable th,table.dataTable td
 
                             </div>
                         </div>
-                        <p class="text-secondary" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
                     </div>
                 </div>
                 <div class="col-md-4 mx-auto" style="height: 290px">
-                    <div class="col-md-12 mx-auto bg-primary" style="height: 290px; border-radius: 20px">
+                    <div class="col-md-12 mx-auto " style="height: 290px; border-radius: 20px; background-image: url('https://i.imgur.com/JDVH6Ot.png');">
                         <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
                         <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
 
@@ -878,7 +866,7 @@ table.dataTable,table.dataTable th,table.dataTable td
 
                             </div>
                         </div>
-                        <p class="text-secondary" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
                     </div>
                 </div>
 
@@ -886,7 +874,7 @@ table.dataTable,table.dataTable th,table.dataTable td
 
             <div class="mx-auto row" style="margin-top: 25px">
                 <div class="col-md-4 mx-auto" style="height: 290px">
-                    <div class="col-md-12 mx-auto bg-primary" style="height: 290px; border-radius: 20px">
+                    <div class="col-md-12 mx-auto " style="height: 290px; border-radius: 20px; background-image: url('https://i.imgur.com/gfGGrIM.png');">
                         <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
                         <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
 
@@ -900,11 +888,11 @@ table.dataTable,table.dataTable th,table.dataTable td
 
                             </div>
                         </div>
-                        <p class="text-secondary" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
                     </div>
                 </div>
                 <div class="col-md-4 mx-auto" style="height: 290px">
-                    <div class="col-md-12 mx-auto bg-primary" style="height: 290px; border-radius: 20px">
+                    <div class="col-md-12 mx-auto " style="height: 290px; border-radius: 20px; background-image: url('https://i.imgur.com/JDVH6Ot.png');">
                         <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
                         <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
 
@@ -918,11 +906,11 @@ table.dataTable,table.dataTable th,table.dataTable td
 
                             </div>
                         </div>
-                        <p class="text-secondary" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
                     </div>
                 </div>
                 <div class="col-md-4 mx-auto" style="height: 290px">
-                    <div class="col-md-12 mx-auto bg-primary" style="height: 290px; border-radius: 20px">
+                    <div class="col-md-12 mx-auto " style="height: 290px; border-radius: 20px;background-image: url('https://i.imgur.com/ROaWII9.png')">
                         <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
                         <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
 
@@ -936,7 +924,7 @@ table.dataTable,table.dataTable th,table.dataTable td
 
                             </div>
                         </div>
-                        <p class="text-secondary" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
                     </div>
                 </div>
             </div> 
@@ -953,47 +941,48 @@ table.dataTable,table.dataTable th,table.dataTable td
       </div>
 
       
-      <div class="section mx-auto " style="padding-top: 15px">
-        <div class="container mx-auto"> 
-          <h1 class="text-center heading clr_white" style="padding-top: 0px"> Почему Курсы Praxis </h1>
+      <div class="section mx-auto " style="padding-top: 15px; padding-bottom: 60px">
+        <div class="container mx-auto" style="background-image: url(''); background-size: 100% 100%; "> 
+          <h1 class="text-center heading clr_white" style="padding-top: 0px;font-weight: bold"> Почему курсы Praxis? 👾 </h1>
           
           <div class="mx-auto row" style="margin-top: 40px">
             <div class="mx-auto col-md-4" style="">
-              <div style="background-image: url('https://i.imgur.com/drLViiu.png'); background-size: 100% 100%;" class="w-100 h-100">
-                  <h1 class="clr_white heading" style="font-size: 27px; font-weight: bold; margin-top: 0px; padding-top: 70px"> Менторинг - самая эффективная методика </h1>
-                  <p class="clr_white col-md-10" style="padding-top: 15px"> Ментор - это не учитель-теоретик, а профессионал-практик уровня middle и senior, который работает над подобными задачами, знает индустрию изнутри, ее подводные камни и лучшие практики. </p>
+              <div style="background-image: url('https://i.imgur.com/kxSFHJV.png'); background-size: 100% 100%; margin-left: 30px" class="w-100 h-100">
+                  <h1 class="clr_white heading" style="font-size: 23px; font-weight: bold; margin-top: 0px; padding-top: 70px; margin-left: 15px; "> Менторинг - самая эффективная методика </h1>
+                  <p class="clr_white col-md-10" style="padding-top: 15px"> При обучении с ментором студент решает задачу самостоятельно. Это намного эффективнее, чем задачи для самостоятельного решения или курсы лекций. </p>
               </div>
             </div>
             <div class="mx-auto col-md-4" style="">
-              <div style="background-image: url('https://i.imgur.com/drLViiu.png'); background-size: 100% 100%;" class="w-100 h-100">
-                  <h1 class="clr_white heading" style="font-size: 27px; font-weight: bold; margin-top: 0px; padding-top: 70px"> Менторы - специалисты </h1>
-                  <p class="clr_white col-md-10" style="padding-top: 15px"> При обучении с ментором студент решает задачу самостоятельно, а учитель помогает справиться со сложностями. Это эффективнее, чем курсы лекций или задачи для самостоятельного решения. </p>
+              <div style="background-image: url('https://i.imgur.com/V9iFQTD.png'); background-size: 100% 100%; margin-left: 30px" class="w-100 h-100">
+                  <h1 class="clr_white heading" style="font-size: 27px; font-weight: bold; margin-top: 0px; padding-top: 70px; "> Менторы - действующие специалисты </h1>
+                  <p class="clr_white col-md-10" style="padding-top: 15px"> В отличие от учителя-теоретика,
+                  ментор - это практик, который работает над подобными задачами, знает индустрию изнутри, ее подводные камни и лучшие практики. </p>
               </div>
             </div>
             <div class="mx-auto col-md-4" style="">
-              <div style="background-image: url('https://i.imgur.com/drLViiu.png'); background-size: 100% 100%;" class="w-100 h-100">
-                  <h1 class="clr_white heading" style="font-size: 27px; font-weight: bold; margin-top: 0px; padding-top: 70px"> Только практика.<br>
-                  Практика и точка. </h1>
-                  <p class="clr_white col-md-10" style="padding-top: 15px"> Вы не платите за прослушивание лекций, это же можно сделать и бесплатно. </p>
+              <div style="background-image: url('https://i.imgur.com/zNcsEb9.png'); background-size: 100% 100%; margin-left: 30px" class="w-100 h-100">
+                  <h1 class="clr_white heading" style="font-size: 27px; font-weight: bold; margin-top: 0px; padding-top: 70px; margin-left: 20px;"> Только практика.
+                    Практика и точка. </h1>
+                  <p class="clr_white col-md-10" style="padding-top: 15px"> Вы не платите за прослушивание лекций. Это можно сделать и бесплатно. Вы платите за опыт. </p>
               </div>
             </div>
           </div>
 
           <div class="mx-auto row " style="margin-top: 22px"> 
             <div class="mx-auto col-md-4" style="">
-              <div style="background-image: url('https://i.imgur.com/drLViiu.png'); background-size: 100% 100%;" class="w-100 h-100">
+              <div style="background-image: url('https://i.imgur.com/V9iFQTD.png'); background-size: 100% 100%;" class="w-100 h-100">
                   <h1 class="clr_white heading" style="font-size: 27px; font-weight: bold; margin-top: 0px; padding-top: 70px"> Реальные и актуальные практические задачи </h1>
                   <p class="clr_white col-md-10" style="padding-top: 15px"> Актуальные и нужны знания и навыки, то, с чем сталкивается специалист на работе, ничего лишнего или теоретического. Учебная программа регулярно обновляется под потребности рынка. </p>
               </div>
             </div>
             <div class="mx-auto col-md-4" style="">
-              <div style="background-image: url('https://i.imgur.com/drLViiu.png'); background-size: 100% 100%;" class="w-100 h-100">
+              <div style="background-image: url('https://i.imgur.com/zNcsEb9.png'); background-size: 100% 100%;" class="w-100 h-100">
                   <h1 class="clr_white heading" style="font-size: 27px; font-weight: bold; margin-top: 0px; padding-top: 70px"> Обучение онлайн </h1>
                   <p class="clr_white col-md-10" style="padding-top: 15px"> Наше обучение проходит дистанционно. Учебные процессы отработаны до совершенства удобным интерфейсом и автоматизацией всех процессов. </p>
               </div>
             </div>
             <div class="mx-auto col-md-4" style="">
-              <div style="background-image: url('https://i.imgur.com/drLViiu.png'); background-size: 100% 100%;" class="w-100 h-100">
+              <div style="background-image: url('https://i.imgur.com/kxSFHJV.png'); background-size: 100% 100%;" class="w-100 h-100">
                   <h1 class="clr_white heading" style="font-size: 27px; font-weight: bold; margin-top: 0px; padding-top: 70px"> Возможность обучения на коммерческом кейсе </h1>
                   <p class="clr_white col-md-10" style="padding-top: 15px"> Вы получаете понимание того, как работает реальный проект и команда, возможность прочувствовать это все на  практике и узнать: точно-ли подходит Вам подобная профессия. </p>
               </div>
@@ -1003,13 +992,13 @@ table.dataTable,table.dataTable th,table.dataTable td
       </div>
 
      <!-- ======= Как проходит обучение ======= -->
-<div class="section mx-auto" style="padding-top: 30px">
-   <div class="container mx-auto">
-      <h1 class="text-center title_custom clr_white heading" style="margin-top: 0px">Как проходит обучение?</h1>
+<div class="section mx-auto" style="padding-top: 60px">
+   <div class="container mx-auto" style="background-image: url('https://i.imgur.com/uCzAK1P.png'); background-size: 100% 100%">
+      <h1 class="text-center title_custom clr_white heading" style="margin-top: 0px; font-weight: bold">Как проходит обучение?</h1>
       <div class="col-md-8 text-center mx-auto" style="">
-         <p class="subtitle" style="color: black"> После прохождения регистрации, ты автоматически получишь доступ к бесплатному мини-проекту, который выполнишь вместе со своим ментором. </p>
+         <p class="subtitle" style="color: white"> После прохождения регистрации, ты автоматически получишь доступ к бесплатному мини-проекту, который выполнишь вместе со своим ментором. </p>
       </div>
-      <div class="accordion" id="accordionExample">
+      <div class="accordion col-md-9 mx-auto" id="accordionExample" >
          <div class="card">
             <div class="card-header" id="headingOne">
                <h2 class="mb-0">
@@ -1020,7 +1009,7 @@ table.dataTable,table.dataTable th,table.dataTable td
             </div>
             <div id="collapseOne1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                <div class="card-body">
-                  Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                    После прохождения регистрации вы получаете доступ к курсам менторов. 
                </div>
             </div>
          </div>
@@ -1034,7 +1023,7 @@ table.dataTable,table.dataTable th,table.dataTable td
             </div>
             <div id="collapseOne2" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                <div class="card-body">
-                  Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                  Вы выполняете общий проект вмместе с ментором, заточенный на хороошее начало вашей карьеры 
                </div>
             </div>
          </div>
@@ -1048,7 +1037,7 @@ table.dataTable,table.dataTable th,table.dataTable td
             </div>
             <div id="collapseOne3" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                <div class="card-body">
-                  Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                    Количество оплачиваемого времени напрямуюю зависит от обих сторон (Ментор, ученик). Ментор ставит цену для своего курса в рамках допустимого, а ученик сам выбирает продолжительность своего участия в процессе 
                </div>
             </div>
          </div>
@@ -1062,7 +1051,7 @@ table.dataTable,table.dataTable th,table.dataTable td
             </div>
             <div id="collapseOne4" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                <div class="card-body">
-                  Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                  Со временем на платформу будут приходить как новые менторы - так и новые ученики, соответственно будет увеличиватья количество и разнообразие Активных Курсов
                </div>
             </div>
          </div>
@@ -1075,8 +1064,8 @@ table.dataTable,table.dataTable th,table.dataTable td
                </h2>
             </div>
             <div id="collapseOne5" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-               <div class="card-body">
-                  Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+               <div class="card-body"> 
+                    После оплаты выбранного кейса Ментор связывается с вами и начинает свою деятельность (Отправляет задания, проводит совместные консультации)
                </div>
             </div>
          </div>
@@ -1087,7 +1076,7 @@ table.dataTable,table.dataTable th,table.dataTable td
 
       <div class="section mx-auto" style="padding-top: 20px">
         <div class="container mx-auto">
-          <h1 class="text-center title_custom clr_white heading" style="padding: 0px">Популярные менторы</h1>
+          <h1 class="text-center title_custom clr_white heading" style="padding: 0px; font-weight: bold">Популярные менторы</h1>
                     <div class="col-md-8 text-center mx-auto" style="">
             <p class="subtitle" style="color: black"> Super Mentor could be an internal or external person that offers one-on-one coaching for your mentors. </p>
           </div>
@@ -1095,9 +1084,9 @@ table.dataTable,table.dataTable th,table.dataTable td
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="card-group">
+                    <div class="card-group ">
                       <div class="card">
-                        <img src="https://vorle.ru/media/konkurs/konkurs_imgs/1_dwlxJgz.jpg" class="card-img-top" alt="...">
+                        <img src="https://i.imgur.com/EaBLU5Z.png" class="card-img-top" style="height: 250px" alt="...">
                         <div class="card-body pt-0 mt-0 text-center">
                             <div class="row py-3" style="background-color: #33D6F5">
                                 <p class="card-text">Репутация 5142 звезды</p>
@@ -1109,7 +1098,7 @@ table.dataTable,table.dataTable th,table.dataTable td
                         </div>
                       </div>
                       <div class="card">
-                        <img src="https://static4.depositphotos.com/1005893/311/i/600/depositphotos_3110740-stock-photo-good-looking-asian.jpg" class="card-img-top" alt="...">
+                        <img src="https://i.imgur.com/EaBLU5Z.png" class="card-img-top" style="height: 250px" alt="...">
                         <div class="card-body pt-0 mt-0 text-center">
                             <div class="row py-3" style="background-color: #33D6F5">
                                 <p class="card-text">Репутация 5142 звезды</p>
@@ -1121,7 +1110,7 @@ table.dataTable,table.dataTable th,table.dataTable td
                         </div>
                       </div>
                       <div class="card">
-                        <img src="https://image.freepik.com/free-photo/happy-young-dark-skinned-man-with-small-beard-dressed-in-checkered-shirt-standing-against-blank-chalkboard-looking-with-cheerful-smile-human-face-expressions-emotions-and-feelings_273609-1415.jpg" class="card-img-top" alt="...">
+                        <img src="https://i.imgur.com/EaBLU5Z.png" class="card-img-top" style="height: 250px" alt="...">
                         <div class="card-body pt-0 mt-0 text-center">
                             <div class="row py-3" style="background-color: #33D6F5">
                                 <p class="card-text">Репутация 5142 звезды</p>
@@ -1135,9 +1124,9 @@ table.dataTable,table.dataTable th,table.dataTable td
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="card-group">
+                    <div class="card-group ">
                       <div class="card">
-                        <img src="https://vorle.ru/media/konkurs/konkurs_imgs/1_dwlxJgz.jpg" class="card-img-top" alt="...">
+                        <img src="https://i.imgur.com/EaBLU5Z.png" class="card-img-top" style="height: 250px" alt="...">
                         <div class="card-body pt-0 mt-0 text-center">
                             <div class="row py-3" style="background-color: #33D6F5">
                                 <p class="card-text">Репутация 5142 звезды</p>
@@ -1149,7 +1138,7 @@ table.dataTable,table.dataTable th,table.dataTable td
                         </div>
                       </div>
                       <div class="card">
-                        <img src="https://static4.depositphotos.com/1005893/311/i/600/depositphotos_3110740-stock-photo-good-looking-asian.jpg" class="card-img-top" alt="...">
+                        <img src="https://i.imgur.com/EaBLU5Z.png" class="card-img-top" style="height: 250px" alt="...">
                         <div class="card-body pt-0 mt-0 text-center">
                             <div class="row py-3" style="background-color: #33D6F5">
                                 <p class="card-text">Репутация 5142 звезды</p>
@@ -1161,7 +1150,7 @@ table.dataTable,table.dataTable th,table.dataTable td
                         </div>
                       </div>
                       <div class="card">
-                        <img src="https://image.freepik.com/free-photo/happy-young-dark-skinned-man-with-small-beard-dressed-in-checkered-shirt-standing-against-blank-chalkboard-looking-with-cheerful-smile-human-face-expressions-emotions-and-feelings_273609-1415.jpg" class="card-img-top" alt="...">
+                        <img src="https://i.imgur.com/EaBLU5Z.png" class="card-img-top" style="height: 250px" alt="...">
                         <div class="card-body pt-0 mt-0 text-center">
                             <div class="row py-3" style="background-color: #33D6F5">
                                 <p class="card-text">Репутация 5142 звезды</p>
@@ -1189,7 +1178,7 @@ table.dataTable,table.dataTable th,table.dataTable td
     </div>
 </div>
 
-<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top"><i class="fas fa-angle-up"></i></a>
+<!-- <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top"><i class="fas fa-angle-up"></i></a> -->
 </div>
 
         
@@ -1295,11 +1284,11 @@ table.dataTable,table.dataTable th,table.dataTable td
                         ),
                     )); ?>
                     <div class="" style="background-image: url(); background-color: #040012">
-                      <div class="filter"></div>
+                      
                                 <div class="container">
 
                     <div class="text-center" style="padding-top: 50px; padding-bottom: 0px;margin-bottom: 0px">
-                        <h1 style="color: white; font-family: 'Raleway'">Пристегнуть ремни, взлетаем!</h1>
+                        <h1 style="color: white; font-family: 'Raleway'; font-size: 56px; font-weight: bold;">Пристегнуть ремни, взлетаем!</h1>
                         <p style="color: white; font-family: 'Raleway'">Вы оставляете заявку и мы с вами связывается. Вы проходите экспресс-тестирование, после чего получаете доступ к подходящим для Вас курсам. Срок обучения зависит от того, сколько времени вы будете уделять учебе и подписки. А по окончанию у вас будет опыт работы и проект в портфолио. Правда, здорово?</p>
                     </div>
 
@@ -1384,14 +1373,14 @@ table.dataTable,table.dataTable th,table.dataTable td
 <!-- Описание курса -->
 
 <div ng-show="active=='course_description'" class="fade-in">
-        <div class="page-header section-dark fade-in" style="background-image: url('https://i.imgur.com/SxLHjNm.png')">
+        <div class="page-header section-dark fade-in" style="background-image: url('https://i.imgur.com/SxLHjNm.png'); ">
         
             <div class="col-md-12">
               <div class="row ">
                 <div class="col-md-11 mx-auto" >
-                    <h1 class="title_custom col-mb-10 clr_white" style="margin-top: 0px; font-size: 70px"> Веб: Онлайн-сервис<br> для детей KidCode </h1>
+                    <h1 class="title_custom col-mb-10 clr_white" style="margin-top: 0px; font-size: 70px; font-weight: bold"> Веб: Онлайн-сервис<br> для детей KidCode </h1>
                     <p align="justify" style="font-size: 24px; padding-top: 20px; padding-left: 0px" class="col-md-7 clr_white "> KidCode предлагает детям дошкольного и школьного возраста от 5 до 11 лет бесплатный курс, который поможет им лучше ориентироваться в сфере интернет-сети. Наши занятия помогут повысить безопасность ребёнка и уберечь его от потенциальных кибер-мошенников. С помощью учетной записи можно будет просматривать рейтинг знаний ребёнка. </p>
-                    <button class="text-light col-5 btn-round" style="border-width: 0px; background: #6700EE;font-size: 24px; height: 70px; margin-top: 70px; "> Записаться на Курс 
+                    <button ng-click="active='course_order'" class="text-light col-5 btn-round" style="border-width: 0px; background: #6700EE;font-size: 24px; height: 70px; margin-top: 70px; "> Приобрести курс 
                     </button>
                 </div>
                
@@ -1421,7 +1410,7 @@ table.dataTable,table.dataTable th,table.dataTable td
     <div class="section mx-auto" style="padding-top: 30px; ">
    <div class="h-100" style="background-image: url('https://i.imgur.com/2TRnBp0.png'); background-size: 100% 100%"> 
    <div class="container mx-auto " >
-      <h1 class="text-center title_custom clr_white heading" style="margin-top: 210px">Программа проекта KidCode</h1>
+      <h1 class="text-center title_custom clr_white heading" style="margin-top: 210px; font-weight: bold">Программа проекта KidCode</h1>
       <div class="col-md-8 text-center mx-auto" style="">
          <p class="subtitle" style="color: black"> Курс KidCode состоит из 5 блоков: кибербезопасность; защита персональных данных; этика пользователя сети; сортировка информации; цифровое гражданство. </p>
       </div>
@@ -1500,11 +1489,11 @@ table.dataTable,table.dataTable th,table.dataTable td
    </div>
 </div> 
 
-    <div class="section bg-light" style="padding-top: 5px; ">
+    <div class="section bg-light" style="padding-top: 5px; padding-bottom: 1px">
         <div class="container w-100" style=";height: 330px">
             <div class="row mx-auto" style="margin-top: 150px">
                 <div class="col-md-7 mx-auto" style="height: 200px; padding-right: 0px">
-                     <h1 class="title_custom col-mb-10 clr_black" style="margin-top: 10px; font-size: 50px; color: black"> Характеристика<br> проекта KidCode </h1>
+                     <h1 class="title_custom col-mb-10 clr_black" style="margin-top: 10px; font-size: 50px; color: black; font-weight: bold"> Характеристика<br> проекта KidCode </h1>
                     <p align="justify" style="font-size: 21px; padding-top: 20px; padding-left: 0px" class="col-md-7 clr_black "> Информация о проекте в цифрах </p>
                 </div>
 
@@ -1547,7 +1536,228 @@ table.dataTable,table.dataTable th,table.dataTable td
         </div>
     </div>
 
-</div>    
+</div>
+
+<div class="section mx-auto">
+    <div class="container mx-auto" style="background-image: url('https://i.imgur.com/VfrYr7j.png'); background-size: 100% 100%">
+        <div class="col-md-12 mx-auto" style="">
+            <div class="row">
+                <div class="col-md-6 mx-auto">       
+                    <img src="https://i.imgur.com/8vMSBSR.png" class="col-12" style="border-radius: 20px; ">
+                </div>
+                <div class="col-md-6 mx-auto">
+                    <h1 class="heading clr_white" style="margin-top: 5px; font-weight: bold">
+                         Ментор проекта -<br> Игорь Перчаткин
+                    </h1>
+                    <p class="text-muted" style="font-size: 20px; margin-top: 5px"> UI/IX дизайнер </p>
+                    <p class="clr_white" style="font-size: 16px"> Люблю делать мир лучше, детей и больше всего свою работу! Занимаюсь в основном творческими проектами, по типу АртХаус. Девиз по жизни... его нет, но мой стакан всегда наполовину полон! </p>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h1 class="clr_white" style="font-size: 30px; margin-top: 0px"> 5 лет </h1>
+                            <p class="text-success" style="font-size: 16px; "> В IT сфере </p>
+                        </div>
+                        <div class="col-md-5">
+                            <h1 class="clr_white" style="font-size: 30px; margin-top: 0px"> 0,5 года </h1>
+                            <p class="text-success" style="font-size: 16px; "> Опыт менторства </p>
+                        </div>
+                    </div>
+                    <div class="row text-center col-md-8" style="padding: 0px">
+                        <img src="https://i.imgur.com/mJzEWWt.png" style="height: 64px; width: 64px; padding: 0px" class="mx-auto">
+                        <img src="https://i.imgur.com/DDFV4Ga.png" style="height: 64px; width: 64px; padding: 0px" class="mx-auto">
+                        <img src="https://i.imgur.com/z5Di3d7.png" style="height: 64px; width: 64px; padding: 0px" class="mx-auto">
+                        <img src="https://i.imgur.com/b77MBZz.png" style="height: 64px; width: 64px; padding: 0px" class="mx-auto">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section mx-auto " style="padding-top: 15px; padding-bottom: 60px">
+        <div class="container mx-auto" style="background-image: url(''); background-size: 100% 100%; "> 
+          <h1 class="text-center heading clr_white" style="padding-top: 0px; font-weight: bold"> Почему курсы Praxis? 👾 </h1>
+          
+          <div class="mx-auto row" style="margin-top: 40px">
+            <div class="mx-auto col-md-4" style="">
+              <div style="background-image: url('https://i.imgur.com/kxSFHJV.png'); background-size: 100% 100%; margin-left: 30px" class="w-100 h-100">
+                  <h1 class="clr_white heading" style="font-size: 23px; font-weight: bold; margin-top: 0px; padding-top: 70px; margin-left: 15px; "> Менторинг - самая эффективная методика </h1>
+                  <p class="clr_white col-md-10" style="padding-top: 15px"> При обучении с ментором студент решает задачу самостоятельно. Это намного эффективнее, чем задачи для самостоятельного решения или курсы лекций. </p>
+              </div>
+            </div>
+            <div class="mx-auto col-md-4" style="">
+              <div style="background-image: url('https://i.imgur.com/V9iFQTD.png'); background-size: 100% 100%; margin-left: 30px" class="w-100 h-100">
+                  <h1 class="clr_white heading" style="font-size: 27px; font-weight: bold; margin-top: 0px; padding-top: 70px; "> Менторы - действующие специалисты </h1>
+                  <p class="clr_white col-md-10" style="padding-top: 15px"> В отличие от учителя-теоретика,
+                  ментор - это практик, который работает над подобными задачами, знает индустрию изнутри, ее подводные камни и лучшие практики. </p>
+              </div>
+            </div>
+            <div class="mx-auto col-md-4" style="">
+              <div style="background-image: url('https://i.imgur.com/zNcsEb9.png'); background-size: 100% 100%; margin-left: 30px" class="w-100 h-100">
+                  <h1 class="clr_white heading" style="font-size: 27px; font-weight: bold; margin-top: 0px; padding-top: 70px; margin-left: 20px;"> Только практика.
+                    Практика и точка. </h1>
+                  <p class="clr_white col-md-10" style="padding-top: 15px"> Вы не платите за прослушивание лекций. Это можно сделать и бесплатно. Вы платите за опыт. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-auto row " style="margin-top: 22px"> 
+            <div class="mx-auto col-md-4" style="">
+              <div style="background-image: url('https://i.imgur.com/V9iFQTD.png'); background-size: 100% 100%;" class="w-100 h-100">
+                  <h1 class="clr_white heading" style="font-size: 27px; font-weight: bold; margin-top: 0px; padding-top: 70px"> Реальные и актуальные практические задачи </h1>
+                  <p class="clr_white col-md-10" style="padding-top: 15px"> Актуальные и нужны знания и навыки, то, с чем сталкивается специалист на работе, ничего лишнего или теоретического. Учебная программа регулярно обновляется под потребности рынка. </p>
+              </div>
+            </div>
+            <div class="mx-auto col-md-4" style="">
+              <div style="background-image: url('https://i.imgur.com/zNcsEb9.png'); background-size: 100% 100%;" class="w-100 h-100">
+                  <h1 class="clr_white heading" style="font-size: 27px; font-weight: bold; margin-top: 0px; padding-top: 70px"> Обучение онлайн </h1>
+                  <p class="clr_white col-md-10" style="padding-top: 15px"> Наше обучение проходит дистанционно. Учебные процессы отработаны до совершенства удобным интерфейсом и автоматизацией всех процессов. </p>
+              </div>
+            </div>
+            <div class="mx-auto col-md-4" style="">
+              <div style="background-image: url('https://i.imgur.com/kxSFHJV.png'); background-size: 100% 100%;" class="w-100 h-100">
+                  <h1 class="clr_white heading" style="font-size: 27px; font-weight: bold; margin-top: 0px; padding-top: 70px"> Возможность обучения на коммерческом кейсе </h1>
+                  <p class="clr_white col-md-10" style="padding-top: 15px"> Вы получаете понимание того, как работает реальный проект и команда, возможность прочувствовать это все на  практике и узнать: точно-ли подходит Вам подобная профессия. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      <!-- Актуальные Кейсы -->
+      <div class="section mx-auto" style="padding-top: 30px">
+        <div class="container mx-auto" style="background-image: url('https://i.imgur.com/MJ0GQjU.png'); background-size: 100% 100%">
+          <h1 class="text-center heading clr_white" style="padding-top: 0px; font-weight: bold"> Актуальные Кейсы </h1>
+          <div class="col-md-8 text-center mx-auto" style="">
+            <p class="subtitle clr_white" style="padding-top: 8px"> Подборка проектов, которые могут понравиться Вашему ребенку: </p>
+          </div>
+          <div class="col-md-12 mx-auto" style="margin-top: 20px; height:650px">
+            <div class="mx-auto row" style="margin-top: 25px">
+                <div class="col-md-4 mx-auto" style="height: 290px">
+                    <div class="col-md-12 mx-auto " style="height: 290px; border-radius: 20px; background-image: url('https://i.imgur.com/ROaWII9.png');">
+                        <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
+                        <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
+
+                        <div class="w-100 row ">
+                            <div class="col-md-3" style="height:60px; padding-right: 0px">
+                                <img src="https://i.imgur.com/ab58dDp.png" class="img-circle img-no-padding img-responsive">
+                            </div>
+                            <div class="col-md-9" style="height: 60px; padding-left: 0px; padding-right: 0px">
+                                <p class="clr_black" style="font-size: 16px"> Ментор: Андрей Костюшко </p>
+                                <p class="clr_violet" style="font-size: 15px; line-height: 8px"> Репутация: 3621 звёзд </p>
+
+                            </div>
+                        </div>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mx-auto" style="height: 290px">
+                    <div class="col-md-12 mx-auto" style="height: 290px; border-radius: 20px; background-image: url('https://i.imgur.com/gfGGrIM.png');">
+                        <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
+                        <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
+
+                        <div class="w-100 row ">
+                            <div class="col-md-3" style="height:60px; padding-right: 0px">
+                                <img src="https://i.imgur.com/ab58dDp.png" class="img-circle img-no-padding img-responsive">
+                            </div>
+                            <div class="col-md-9" style="height: 60px; padding-left: 0px; padding-right: 0px">
+                                <p class="clr_black" style="font-size: 16px"> Ментор: Андрей Костюшко </p>
+                                <p class="clr_violet" style="font-size: 15px; line-height: 8px"> Репутация: 3621 звёзд </p>
+
+                            </div>
+                        </div>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mx-auto" style="height: 290px">
+                    <div class="col-md-12 mx-auto " style="height: 290px; border-radius: 20px; background-image: url('https://i.imgur.com/JDVH6Ot.png');">
+                        <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
+                        <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
+
+                        <div class="w-100 row ">
+                            <div class="col-md-3" style="height:60px; padding-right: 0px">
+                                <img src="https://i.imgur.com/ab58dDp.png" class="img-circle img-no-padding img-responsive">
+                            </div>
+                            <div class="col-md-9" style="height: 60px; padding-left: 0px; padding-right: 0px">
+                                <p class="clr_black" style="font-size: 16px"> Ментор: Андрей Костюшко </p>
+                                <p class="clr_violet" style="font-size: 15px; line-height: 8px"> Репутация: 3621 звёзд </p>
+
+                            </div>
+                        </div>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mx-auto row" style="margin-top: 25px">
+                <div class="col-md-4 mx-auto" style="height: 290px">
+                    <div class="col-md-12 mx-auto " style="height: 290px; border-radius: 20px; background-image: url('https://i.imgur.com/gfGGrIM.png');">
+                        <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
+                        <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
+
+                        <div class="w-100 row ">
+                            <div class="col-md-3" style="height:60px; padding-right: 0px">
+                                <img src="https://i.imgur.com/ab58dDp.png" class="img-circle img-no-padding img-responsive">
+                            </div>
+                            <div class="col-md-9" style="height: 60px; padding-left: 0px; padding-right: 0px">
+                                <p class="clr_black" style="font-size: 16px"> Ментор: Андрей Костюшко </p>
+                                <p class="clr_violet" style="font-size: 15px; line-height: 8px"> Репутация: 3621 звёзд </p>
+
+                            </div>
+                        </div>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mx-auto" style="height: 290px">
+                    <div class="col-md-12 mx-auto " style="height: 290px; border-radius: 20px; background-image: url('https://i.imgur.com/JDVH6Ot.png');">
+                        <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
+                        <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
+
+                        <div class="w-100 row ">
+                            <div class="col-md-3" style="height:60px; padding-right: 0px">
+                                <img src="https://i.imgur.com/ab58dDp.png" class="img-circle img-no-padding img-responsive">
+                            </div>
+                            <div class="col-md-9" style="height: 60px; padding-left: 0px; padding-right: 0px">
+                                <p class="clr_black" style="font-size: 16px"> Ментор: Андрей Костюшко </p>
+                                <p class="clr_violet" style="font-size: 15px; line-height: 8px"> Репутация: 3621 звёзд </p>
+
+                            </div>
+                        </div>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mx-auto" style="height: 290px">
+                    <div class="col-md-12 mx-auto " style="height: 290px; border-radius: 20px;background-image: url('https://i.imgur.com/ROaWII9.png')">
+                        <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
+                        <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
+
+                        <div class="w-100 row ">
+                            <div class="col-md-3" style="height:60px; padding-right: 0px">
+                                <img src="https://i.imgur.com/ab58dDp.png" class="img-circle img-no-padding img-responsive">
+                            </div>
+                            <div class="col-md-9" style="height: 60px; padding-left: 0px; padding-right: 0px">
+                                <p class="clr_black" style="font-size: 16px"> Ментор: Андрей Костюшко </p>
+                                <p class="clr_violet" style="font-size: 15px; line-height: 8px"> Репутация: 3621 звёзд </p>
+
+                            </div>
+                        </div>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-md-12 mx-auto row" style="height: 60px; margin-top: 33px">
+                <div class="col-md-9 mx-auto" style="height: 60px">
+
+                </div>
+                <div class="col-md-3 mx-auto" style="height: 60px">
+                    <a style="font-size: 21px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_white"> Перейти в Каталог --> </a>
+                </div>
+            </div>                    
+          </div>
+        </div>
+      </div>
+
 </div>  
 </div>
 
@@ -1574,7 +1784,7 @@ table.dataTable,table.dataTable th,table.dataTable td
     <div class="d-flex">
         <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('https://i.imgur.com/XQgwfEe.png');">
             <div class="col-md-9 mx-auto">
-                <h1 class="heading clr_white"> Рейтинг Учеников </h1>
+                <h1 class="heading clr_white " style="font-weight: bold"> Панель Активности </h1>
                 
             </div>    
         </div>
@@ -1582,7 +1792,7 @@ table.dataTable,table.dataTable th,table.dataTable td
     </div>
     <div style="display: flex">
        <div class="h-75 sidebar" style="" >
-                <a href="" class="services" ng-click="active='student_profile_1'" title="Control Panel">
+                <a href="" class="services" ng-click="active='student_profile_1'" title="Control Panel" data-toggle="tooltip" data-placement="right">
                   <div class="mx-auto " style="width: 90px; height: 90px; margin-top: 15px; background-image: url('https://i.imgur.com/O3CYI3i.png'); background-size: 100% 100%" >
                         
                   </div>
@@ -1612,7 +1822,7 @@ table.dataTable,table.dataTable th,table.dataTable td
 
     <div>
     <div class="col-md-9 mx-auto" style="">
-      <div class="col-md-9 mx-auto" style="padding-top: 15px">
+      <div class="col-md-12 mx-auto" style="padding-top: 15px">
           
         <h1 class="clr_white" style="padding-top: 20px;padding-bottom: 30px; font-weight: bold; font-size: 41px"> Новости </h1>
       </div>
@@ -1648,7 +1858,7 @@ table.dataTable,table.dataTable th,table.dataTable td
     </div>
 
     <div class="col-md-9 mx-auto row" style="padding-top: 30px; padding-bottom: 30px">
-    <h1 class="clr_white heading" style="padding-bottom: 30px"> Прогресс </h1>
+    <h1 class="clr_white heading" style="padding-bottom: 30px; padding-top: 33px;font-weight: bold"> Прогресс </h1>
         <div class="col-md-4 mx-auto" style="">
             <img src="https://i.imgur.com/bz5tP3g.png">
         </div>
@@ -1663,7 +1873,7 @@ table.dataTable,table.dataTable th,table.dataTable td
     </div>
 
     <div class="col-md-9 mx-auto" style="margin-top: 50px; padding-bottom: 100px">
-    <h1 class="clr_white heading" style="padding-bottom: 30px"> Задачи </h1>
+    <h1 class="clr_white heading" style="padding-bottom: 30px; font-weight: bold"> Задачи </h1>
     <nav>
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
       <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Новые <span class="badge badge-primary badge-pill">14</span></a>
@@ -1793,7 +2003,9 @@ table.dataTable,table.dataTable th,table.dataTable td
 <div ng-show="active=='student_profile_2'" class="fade-in" style="z-index: 1; position: relative;">
     <div class="wrapper fade-in">
     <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('https://i.imgur.com/XQgwfEe.png'); z-index: 1">
-        
+        <div class="col-md-9 mx-auto">
+            <h1 class="heading clr_white" style="font-weight: bold"> Личный Кабинет </h1>    
+        </div>
     </div>
     <div class="h-75 sidebar" style="" >
                 <a href="" class="services" ng-click="active='student_profile_1'" title="Control Panel">
@@ -1826,33 +2038,38 @@ table.dataTable,table.dataTable th,table.dataTable td
 
 
     <!-- Личный Кабинет -->
+    <?php $current_user = $model[1]->findByAttributes(array('username' => Yii::app()->user->name)); ?>
     <div class=" " >
         <div class="container">
             <div class="owner"> 
                     
                 <div class="name" style="margin-top: 10px">
-                    <div class="row mx-auto col-md-5 text-center" style="padding-right: 0px; padding-left: 25px">
-                        <img src="https://i.imgur.com/d2SOpe7.png" alt="" class="img-circle img-no-padding img-responsive" style="z-index: 20;height: 340px; width: 340px; " align="center">
-                        <h1 style="margin-top: 4px; padding-right: 0px; padding-left: 15px" class="title_custom col-9"><?php 
-                        $current_user = $model[1]->findByAttributes(array('username' => Yii::app()->user->name));
-
+                    <div class="row mx-auto col-md-5 text-center" style="padding-right: 0px; padding-left: 0px">
+                        <img src="<?php echo $current_user->avatar_link; ?>" alt="" class="img-circle img-no-padding img-responsive mx-auto" style="z-index: 20;height: 340px; width: 340px; " align="center">
+                        <h1 style="margin-top: 4px; padding-right: 0px; padding-left: 15px" class="title_custom col-md-12"><?php 
+                        
                         echo $current_user->name . " " . $current_user->surname;
                         ?>
 
                          </h1>
-                        <div class="col-md-2" style="padding: 0px">    
+                           
+                    </div> 
+                    <div class="col-md-6 mx-auto" style="padding: 0px">    
                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2222" aria-expanded="false" aria-controls="collapseExample2222">
                                     Редактировать
                                 </button>
 
-                        </div>    
+                               <a class="btn btn-primary" href="http://yii1/mpit-backend-2021-prod/index.php/site/logout">
+                                    Выйти из аккаунта
+                                </a>
+
                     </div> 
                     <h3 style="margin-top: 6px; font-size: 20px" class="clr_white" >
                     <?php echo $current_user->profession;
                     if($current_user->isMentor == null) {
-                        echo " (ученик)";
+                        echo " (ученик) <br> Ментор: {$current_user->mentor_name}";
                     } ?></h3>    
-                    <h3 style="margin-top: 6px; font-size: 20px" class="clr_white" > Разработчик </h3>
+                    <!-- <h3 style="margin-top: 6px; font-size: 20px" class="clr_white" > Разработчик </h3> -->
                 </div>
 
                 <div class="collapse" id="collapseExample2222">
@@ -1865,42 +2082,48 @@ table.dataTable,table.dataTable th,table.dataTable td
                            'enableAjaxValidation'=> false,
                            'enableClientValidation'=>true,
                            'clientOptions'=>array(
-                               'validateOnSubmit'=>true,
+                            'validateOnSubmit'=>true,
                            ),
                            )); ?>
 
                                           <div class="row">
-                                             <?php echo $form->labelEx($model[1],'name'); ?>
+                                             <?php echo $form->labelEx($model[1],'name', array('style' => 'color: #ED088D')); ?>
                                              <?php echo $form->textField($model[1],'name', array()); ?>
                                              <?php echo $form->error($model[1],'name'); ?>
                                           </div>
 
                                           <div class="row">
-                                             <?php echo $form->labelEx($model[1],'surname'); ?>
+                                             <?php echo $form->labelEx($model[1],'surname', array('style' => 'color: #ED088D')); ?>
                                              <?php echo $form->textField($model[1],'surname', array()); ?>
                                              <?php echo $form->error($model[1],'surname'); ?>
                                           </div>
 
                                           <div class="row">
-                                             <?php echo $form->labelEx($model[1],'user_about'); ?>
+                                             <?php echo $form->labelEx($model[1],'user_about', array('style' => 'color: #ED088D')); ?>
                                              <?php echo $form->textField($model[1],'user_about', array()); ?>
                                              <?php echo $form->error($model[1],'user_about'); ?>
                                           </div>
 
                                           <div class="row">
-                                             <?php echo $form->labelEx($model[1],'birth_date'); ?>
+                                             <?php echo $form->labelEx($model[1],'birth_date', array('style' => 'color: #ED088D')); ?>
                                              <?php echo $form->textField($model[1],'birth_date', array()); ?>
                                              <?php echo $form->error($model[1],'birth_date'); ?>
                                           </div>
 
                                           <div class="row">
-                                             <?php echo $form->labelEx($model[1],'profession'); ?>
+                                             <?php echo $form->labelEx($model[1],'profession', array('style' => 'color: #ED088D')); ?>
                                              <?php echo $form->textField($model[1],'profession', array()); ?>
                                              <?php echo $form->error($model[1],'profession'); ?>
                                           </div>
+                                          <div class="row">
+                                             <?php echo $form->labelEx($model[1],'avatar_link', array('style' => 'color: #ED088D')); ?>
+                                             <?php echo $form->textField($model[1],'avatar_link', array()); ?>
+                                             <?php echo $form->error($model[1],'avatar_link'); ?>
+                                          </div>
+                                          <br>
 
                                           <div class="row buttons">
-                                             <?php echo CHtml::submitButton('Отправить', array()); ?>
+                                             <?php echo CHtml::submitButton('Отправить', array('class' => 'btn btn-primary')); ?>
                                           </div>
                                          
                                  <?php $this->endWidget(); ?>
@@ -1916,18 +2139,18 @@ table.dataTable,table.dataTable th,table.dataTable td
 
 
                 <div class="text-center mx-auto col-md-9 clr_white" style="margin-top: 20px">
-                    <p style="color: white; "> На свете нет ни одного человека, который бы не мечтал. Я не стал исключением, в моей голове создавались образы прекрасного будущего. События, которые сделали бы счастливым не только меня, но и близких мне людей. В каждом новом увлечении мне представлялись возможности приближения к мечте. И эта платформа делает меня лучше и подготовленней. </p>
+                    <p style="color: white; "><?php echo "О себе: <br><br>" . $current_user->user_about; ?></p>
                 </div>
 
-                <div class="row mx-auto col-md-4" style="margin-top: 27px">
+                <div class="mx-auto col-md-4" style="margin-top: 27px">
                     
-                        <img src="https://cdn.discordapp.com/attachments/760372831946670104/839697269158182922/insta_logo.png" style="height:70px; width: 70px" class="img-circle img-responsive img-no-padding mx-auto">
+                        <a class="mr-2" href="https://www.instagram.com/mpityakutia/?hl=ru" target="_blank"><img src="https://cdn.discordapp.com/attachments/760372831946670104/839697269158182922/insta_logo.png" style="height:70px; width: 70px" class="img-responsive"></a>
                     
                     
-                        <img src="https://cdn.discordapp.com/attachments/760372831946670104/839697265635622922/twitter_logo.png" style="height:70px; width: 70px" class="img-circle img-responsive img-no-padding mx-auto">
+                        <a class="mr-2" href="https://twitter.com/?lang=ru" target="_blank"><img src="https://cdn.discordapp.com/attachments/760372831946670104/839697265635622922/twitter_logo.png" style="height:70px; width: 70px" class="img-responsive"></a>
                    
                     
-                        <img src="https://cdn.discordapp.com/attachments/760372831946670104/839697266490605588/youtube_logo.png" style="height:70px; width: 70px" class="img-circle img-responsive img-no-padding mx-auto">
+                        <a class="" href="https://www.youtube.com/channel/UCXgM6C_NV33xWk3Ke8GucqA" target="_blank"><img src="https://cdn.discordapp.com/attachments/760372831946670104/839697266490605588/youtube_logo.png" style="height:70px; width: 70px" class="img-responsive"></a>
                           
                 </div>
 
@@ -1937,9 +2160,9 @@ table.dataTable,table.dataTable th,table.dataTable td
                 </div>        
             </div> 
 
-            <div class="col-md-7 mx-auto">
+            <div class="col-md-7 mx-auto text-center">
 <?php if($current_user->isMentor == '1'): ?>
-      <div class="">
+      <div class="text-center">
 
    <h1 style="color: white">Отправить задачу</h1>
         <div class="form">
@@ -1953,25 +2176,26 @@ table.dataTable,table.dataTable th,table.dataTable td
            )); ?>
 
                           <div class="row">
-                             <?php echo $form->labelEx($model[5],'task_header'); ?>
+                             <?php echo $form->labelEx($model[5],'task_header', array('style' => 'color: #ED088D')); ?>
                              <?php echo $form->textField($model[5],'task_header', array()); ?>
                              <?php echo $form->error($model[5],'task_header'); ?>
                           </div>
 
                           <div class="row text">
-                             <?php echo $form->labelEx($model[5],'subtasks'); ?>
+                             <?php echo $form->labelEx($model[5],'subtasks', array('style' => 'color: #ED088D')); ?>
                              <?php echo $form->textField($model[5],'subtasks', array()); ?>
                              <?php echo $form->error($model[5],'subtasks'); ?>
                           </div>
 
                           <div class="row ">
-                             <?php echo $form->labelEx($model[5],'student_name'); ?>
+                             <?php echo $form->labelEx($model[5],'student_name', array('style' => 'color: #ED088D')); ?>
                              <?php echo $form->textField($model[5],'student_name', array()); ?>
                              <?php echo $form->error($model[5],'student_name'); ?>
                           </div>
+                          <br>
 
                           <div class="row buttons text-center">
-                             <?php echo CHtml::submitButton('Отправить', array()); ?>
+                             <?php echo CHtml::submitButton('Отправить', array('class' => 'btn btn-primary')); ?>
                           </div>
                          
                  <?php $this->endWidget(); ?>
@@ -1981,11 +2205,11 @@ table.dataTable,table.dataTable th,table.dataTable td
 
 <?php if($current_user->isMentor == '1'): ?>
     <div>
-        <h1 style="color:white">Отзывы о Вас</h1>
+        <h1 style="color:white">Отзывы от учеников</h1>
         <?php $comments_about_you = $model[3]->findAllByAttributes(array('mentor_name' => Yii::app()->user->name));
             foreach ($comments_about_you as $comment) {
                 echo "<h2 style=\"color:white\">{$comment->course_name}</h2><br>";
-                echo "<p>{$comment->comment_text}</p><br>";
+                echo "<p class=\"text-primary\">{$comment->comment_text}</p><br>";
                 echo "<p>От ученика: {$comment->student_name}</p><br><br>";
             }
         ?>
@@ -2008,27 +2232,27 @@ table.dataTable,table.dataTable th,table.dataTable td
            )); ?>
 
                           <div class="row">
-                             <?php echo $form->labelEx($model[3],'course_name'); ?>
+                             <?php echo $form->labelEx($model[3],'course_name', array('style' => 'color: #ED088D')); ?>
                              <?php echo $form->textField($model[3],'course_name', array()); ?>
                              <?php echo $form->error($model[3],'course_name'); ?>
                           </div>
 
                           <div class="row">
-                             <?php echo $form->labelEx($model[3],'mentor_name'); ?>
+                             <?php echo $form->labelEx($model[3],'mentor_name', array('style' => 'color: #ED088D')); ?>
                              <?php echo $form->textField($model[3],'mentor_name', array()); ?>
                              <?php echo $form->error($model[3],'mentor_name'); ?>
                           </div>
 
                           <div class="row">
-                             <?php echo $form->labelEx($model[3],'comment_text'); ?>
-                             <?php echo $form->textField($model[3],'comment_text', array()); ?>
+                             <?php echo $form->labelEx($model[3],'comment_text', array('style' => 'color: #ED088D')); ?>
+                             <?php echo $form->textArea($model[3],'comment_text', array('rows' => '6')); ?>
                              <?php echo $form->error($model[3],'comment_text'); ?>
                           </div>
-
+                          <br>
 
 
                           <div class="row buttons">
-                             <?php echo CHtml::submitButton('Отправить', array()); ?>
+                             <?php echo CHtml::submitButton('Отправить', array('class' => 'btn btn-primary')); ?>
                           </div>
                          
                  <?php $this->endWidget(); ?>
@@ -2036,58 +2260,49 @@ table.dataTable,table.dataTable th,table.dataTable td
   </div>
 <?php endif; ?>
 
+    <h1 class="heading clr_white" align="left" style="padding-top: 15px; padding-bottom: 20px; font-weight: bold"> Навыки </h1>
 
-        <h1 class="clr_white heading"> Навыки </h1>
-        
-        
-      <div style="margin-top: 20px" class="tab-pane fade show active" id="nav-home2" role="tabpanel" aria-labelledby="nav-home-tab2">
-            <div class="list-group">
-              <a href="#" class="list-group-item list-group-item-action active">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">List group item heading</h5>
-                  <small>3 days ago</small>
-                </div>
-                <p class="mb-1">Some placeholder content in a paragraph.</p>
-                <small>And some small print.</small>
-              </a>
-              <a href="#" class="list-group-item list-group-item-action active">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">List group item heading</h5>
-                  <small class="text-muted">3 days ago</small>
-                </div>
-                <p class="mb-1">Some placeholder content in a paragraph.</p>
-                <small class="text-muted">And some muted small print.</small>
-              </a>
-              <a href="#" class="list-group-item list-group-item-action active">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">List group item heading</h5>
-                  <small class="text-muted">3 days ago</small>
-                </div>
-                <p class="mb-1">Some placeholder content in a paragraph.</p>
-                <small class="text-muted">And some muted small print.</small>
-              </a>
-              <a href="#" class="list-group-item list-group-item-action active">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">List group item heading</h5>
-                  <small class="text-muted">3 days ago</small>
-                </div>
-                <p class="mb-1">Some placeholder content in a paragraph.</p>
-                <small class="text-muted">And some muted small print.</small>
-              </a>
-              <a href="#" class="list-group-item list-group-item-action active">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">List group item heading</h5>
-                  <small class="text-muted">3 days ago</small>
-                </div>
-                <p class="mb-1">Some placeholder content in a paragraph.</p>
-                <small class="text-muted">And some muted small print.</small>
-              </a>
-            </div>
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active bg-light">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Язык Программирования C++/C</h5>
+            <small class="text-muted">3 days ago</small>
+          </div>
+          <div class="progress w-25" >
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+          </div>
+          
+        </a>
+        <a href="#" class="list-group-item list-group-item-action active bg-light">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Язык Программирования Python/Ruby</h5>
+            <small class="text-muted">3 days ago</small>
+          </div>
+          <div class="progress w-25" >
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+          </div>
+          
+        </a>
+        <a href="#" class="list-group-item list-group-item-action active bg-light">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Язык Разметки HTML/XHTML/XML</h5>
+            <small class="text-muted">3 days ago</small>
+          </div>
+          <div class="progress w-25" >
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+          </div>
+          
+        </a>   
       </div>
+    </div>   
+</div>
 
-      <div class="mx-auto row" style="margin-top: 25px; padding-bottom: 100px">
+    <h1 class="clr_white heading" align="left" style="font-weight: bold"> Портфолио </h1>
+        <div class="mx-auto row" style="margin-top: 25px; padding-bottom: 150px">
                 <div class="col-md-4 mx-auto" style="height: 290px">
-                    <div class="col-md-12 mx-auto bg-primary" style="height: 290px; border-radius: 20px">
+                    <div class="col-md-12 mx-auto " style="height: 290px; border-radius: 20px; background-image: url('https://i.imgur.com/ROaWII9.png');">
                         <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
                         <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
 
@@ -2101,11 +2316,11 @@ table.dataTable,table.dataTable th,table.dataTable td
 
                             </div>
                         </div>
-                        <p class="text-secondary" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
                     </div>
                 </div>
                 <div class="col-md-4 mx-auto" style="height: 290px">
-                    <div class="col-md-12 mx-auto bg-primary" style="height: 290px; border-radius: 20px">
+                    <div class="col-md-12 mx-auto" style="height: 290px; border-radius: 20px; background-image: url('https://i.imgur.com/gfGGrIM.png');">
                         <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
                         <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
 
@@ -2119,11 +2334,11 @@ table.dataTable,table.dataTable th,table.dataTable td
 
                             </div>
                         </div>
-                        <p class="text-secondary" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
                     </div>
                 </div>
                 <div class="col-md-4 mx-auto" style="height: 290px">
-                    <div class="col-md-12 mx-auto bg-primary" style="height: 290px; border-radius: 20px">
+                    <div class="col-md-12 mx-auto " style="height: 290px; border-radius: 20px; background-image: url('https://i.imgur.com/JDVH6Ot.png');">
                         <h1 style="font-size: 26px; font-family: 'Raleway'; font-weight: bold; padding-top: 15px" class="clr_black"> Веб: Онлайн-сервис для детей KidCode </h1>
                         <p class="clr_black" style="font-size: 17px; padding-top: 9px" align="left"> Сайт учит Цифровой грамотности, что особенно актуально в период увеличения мошенников в сети Интернет </p>
 
@@ -2137,13 +2352,11 @@ table.dataTable,table.dataTable th,table.dataTable td
 
                             </div>
                         </div>
-                        <p class="text-secondary" style="font-style: italic;"> Добавлено 14 дней назад </p>
+                        <p class="text-dark" style="font-style: italic;"> Добавлено 14 дней назад </p>
                     </div>
                 </div>
 
             </div>
-     
-   
     </div>        
             
         </div>
@@ -2158,7 +2371,7 @@ table.dataTable,table.dataTable th,table.dataTable td
 <div ng-show="active=='student_profile_3'" class="fade-in">
         <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('https://i.imgur.com/XQgwfEe.png');">
             <div class="col-md-9 mx-auto">
-                <h1 class="heading clr_white"> Задачи </h1>
+                <h1 class="heading clr_white" style="font-weight: bold"> Задачи </h1>
                
             </div>    
         </div>
@@ -2191,13 +2404,13 @@ table.dataTable,table.dataTable th,table.dataTable td
                  
         </div>
     <!-- Таблица сообщений -->
-    <div class="col-md-9 mx-auto" style="padding-bottom: 700px">
+    <div class="col-md-9 mx-auto" style="padding-bottom: 600px">
         <?php $current_user_new_tasks = $model[5]->findAllByAttributes(array('student_name' => Yii::app()->user->name, 'task_status' => 'new'));
         $current_user_current_tasks = $model[5]->findAllByAttributes(array('student_name' => Yii::app()->user->name, 'task_status' => 'current'));
     $current_user_done_tasks = $model[5]->findAllByAttributes(array('student_name' => Yii::app()->user->name, 'task_status' => 'done'));
         ?>
 
-        <h1 class="clr_white heading " style="padding-bottom: 25px"> Задачи </h1>
+        <h1 class="clr_white heading " style="padding-bottom: 25px; font-weight: bold"> Задачи </h1>
         <nav>
       <div class="nav nav-tabs" id="nav-tab" role="tablist">
         <a class="nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home22" role="tab" aria-controls="nav-home22" aria-selected="false">Новые <span class="badge badge-danger badge-pill"><?php echo count($current_user_new_tasks);?></span></a>
@@ -2271,14 +2484,14 @@ table.dataTable,table.dataTable th,table.dataTable td
     <div class="d-flex">
         <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('https://i.imgur.com/XQgwfEe.png');">
             <div class="col-md-9 mx-auto">
-                <h1 class="heading clr_white"> Рейтинг Учеников </h1>
+                <h1 class="heading clr_white" style="font-weight: bold"> Рейтинг Учеников </h1>
                 
             </div>    
         </div>
         
     </div>
     <!-- Таблица сообщений -->
-        <div class="h-75 sidebar" style="" >
+        <div class="h-75 sidebar" >
                 <a href="" class="services" ng-click="active='student_profile_1'" title="Control Panel">
                   <div class="mx-auto " style="width: 90px; height: 90px; margin-top: 15px; background-image: url('https://i.imgur.com/O3CYI3i.png'); background-size: 100% 100%" >
                         
@@ -2306,9 +2519,8 @@ table.dataTable,table.dataTable th,table.dataTable td
                 </a>  
                  
         </div>
-    <div class="col-md-9 mx-auto" >
+    <div class="col-md-9 mx-auto" style="padding-bottom: 550px; padding-top: 25px">
 
-        <h1>ЛИЧНЫЙ КАБИНЕТ / РЕЙТИНГ УЧЕНИКОВ</h1>
         <table id="example" class="display" style="width:100%">
         <thead>
             <tr>
@@ -2355,7 +2567,7 @@ table.dataTable,table.dataTable th,table.dataTable td
     <div class="d-flex">
         <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('https://i.imgur.com/XQgwfEe.png');">
             <div class="col-md-9 mx-auto">
-                <h1 class="heading clr_white"> Уведомления </h1>
+                <h1 class="heading clr_white" style="font-weight: bold"> Уведомления </h1>
                 
             </div>    
         </div>
@@ -2393,7 +2605,7 @@ table.dataTable,table.dataTable th,table.dataTable td
     <!-- Таблица сообщений -->
     <div class="col-md-9 mx-auto" style="border-radius: 50px; padding-bottom: 300px">
 
-        <h1 class="clr_white heading">ЛИЧНЫЙ КАБИНЕТ / УВЕДОМЛЕНИИЯ</h1>
+        <h1 class="clr_white heading" style="font-weight: bold; padding-top: 30px; padding-bottom: 30px">УВЕДОМЛЕНИИЯ</h1>
         <table id="example2" class="display" style="width:100%">
         <thead>
             <tr>
@@ -2736,9 +2948,9 @@ table.dataTable,table.dataTable th,table.dataTable td
 <div ng-show="active=='course_order'">
       <div class="container">
   <div class="py-5 text-center">
-    <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <img class="d-block mx-auto mb-4 img-rounded" src="https://cdn.discordapp.com/attachments/760372831946670104/840055983053340702/unknown.png" alt="" width="80px" height="">
     <h2 style="color: white">Оформление заказа</h2>
-    <p class="lead">Для покупки курса, пожалуйста, заполните форму заказа ниже. В случае какой-либо ошибки, мы гарантируем полный возврат средств!</p>
+    <p class="lead text-primary">Для покупки курса, пожалуйста, заполните форму заказа ниже. В случае какой-либо ошибки, мы гарантируем полный возврат средств!</p>
   </div>
 
   <div class="row">
@@ -2808,7 +3020,7 @@ form h1{
 form ul{
     list-style:none;
     color:#fff;
-    font-size:20px;
+    font-size:15px;
     font-weight:bold;
     text-align: left;
     margin:20px 0 15px;
@@ -2854,6 +3066,7 @@ div.total span{
         <form>
 
           <!-- <h1 class="my_h1" style="opacity: 0">500</h1> -->
+          <h3 class="" style="color: #ED088D">Рассчитать сумму</h3>
 
             <ul>
                 <!-- Loop through the services array, assign a click handler, and set or
@@ -2885,13 +3098,13 @@ div.total span{
 
         <h4 class="mb-3" style="color: white">Оплата</h4>
 
-        <select class="sel1" name="select"> <!--Supplement an id here instead of using 'name'-->
+        <select class="sel1" name="select" style="border-radius: 3px"> <!--Supplement an id here instead of using 'name'-->
               <option value="0" selected>Выберите тариф</option>
               <option value="400">Тариф 1</option>
               <option value="500">Тариф 2</option>
         </select>
 
-        <select class="sel2" name="select"> <!--Supplement an id here instead of using 'name'-->
+        <select class="sel2" name="select" style="border-radius: 3px"> <!--Supplement an id here instead of using 'name'-->
               <option value="0" selected>Выберите бонус</option>
               <option value="100">Бонус 1</option>
               <option value="200">Бонус 2</option>
@@ -2900,48 +3113,48 @@ div.total span{
         <div class="d-block my-3">
           <div class="custom-control custom-radio">
             <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-            <label class="custom-control-label" for="credit">Кредитная карта</label>
+            <label class="custom-control-label" for="credit" style="color:white">Кредитная карта</label>
           </div>
           <div class="custom-control custom-radio">
             <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-            <label class="custom-control-label" for="debit">Дебетовая карта</label>
+            <label class="custom-control-label" for="debit" style="color:white">Дебетовая карта</label>
           </div>
           <div class="custom-control custom-radio">
             <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-            <label class="custom-control-label" for="paypal">PayPal</label>
+            <label class="custom-control-label" for="paypal" style="color:white">PayPal</label>
           </div>
 
         </div>
         <div class="row">
           <div class="col-md-6 mb-3">
-            <label for="cc-name">Имя и фамилия владельца карты</label>
+            <label for="cc-name" style="color:white">Имя и фамилия владельца карты</label>
             <input type="text" class="form-control" id="cc-name" placeholder="" required>
-            <small class="text-muted">Данные указаны на вашей карте</small>
-            <div class="invalid-feedback">
-              Name on card is required
+            <small class="text-muted" style="color:white">Данные указаны на вашей карте</small>
+            <div class="invalid-feedback" style="color:white">
+              Поле не заполнено
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="cc-number">Номер карты</label>
+            <label for="cc-number" style="color:white">Номер карты</label>
             <input type="text" class="form-control" id="cc-number" placeholder="" required>
             <div class="invalid-feedback">
-             
+             Поле не заполнено
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-3 mb-3">
-            <label for="cc-expiration">Срок работы карты</label>
+            <label for="cc-expiration" style="color:white">Срок работы карты</label>
             <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
             <div class="invalid-feedback">
-              Expiration date required
+              Поле не заполнено
             </div>
           </div>
           <div class="col-md-3 mb-3">
-            <label for="cc-cvv">CVV-код</label>
+            <label for="cc-cvv" style="color:white">CVV-код</label>
             <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
             <div class="invalid-feedback">
-              Security code required
+              Поле не заполнено
             </div>
           </div>
         </div>
@@ -2966,12 +3179,12 @@ div.total span{
 
     $scope.services = [
         {
-            name: 'Услуга1',
+            name: 'Выбранный тариф',
             price: parseInt(sel1.value),
             // price: parseInt(document.querySelector(".my_h1").innerHTML),
             active:false
         },{
-            name: 'Услуга2',
+            name: 'Выбранный бонус',
             price: parseInt(sel2.value),
             active:false
         }
@@ -2980,12 +3193,12 @@ div.total span{
     sel1.onchange = function() {
             $scope.services = [
         {
-            name: 'Услуга1',
+            name: 'Выбранный тариф',
             price: parseInt(sel1.value),
             // price: parseInt(document.querySelector(".my_h1").innerHTML),
             active:true
         },{
-            name: 'Услуга2',
+            name: 'Выбранный бонус',
             price: parseInt(sel2.value),
             active:true
         }
@@ -2996,12 +3209,12 @@ div.total span{
     sel2.onchange = function() {
             $scope.services = [
         {
-            name: 'Услуга1',
+            name: 'Выбранный тариф',
             price: parseInt(sel1.value),
             // price: parseInt(document.querySelector(".my_h1").innerHTML),
             active:true
         },{
-            name: 'Услуга2',
+            name: 'Выбранный бонус',
             price: parseInt(sel2.value),
             active:true
         }
@@ -3036,16 +3249,16 @@ div.total span{
 
 
   <!-- Футер -->
-  <footer class=" border-top" style="background-color: #4A2CFF">
+  <footer class=" border-top" style="background-color: #4A2CFF; background-image: url('https://cdn.discordapp.com/attachments/760372831946670104/840025843400835072/footer_hand.png'), background-size: 100% 100%;">
     
     <div class="row" style="padding-left: 150px; padding-right: 150px; padding-top: 50px; padding-bottom: 50px">
        <div class="col-6 col-md" style="background-color: ; padding-top: -50px; margin-top: -25px">
         <h3 style="color: white; font-weight: 650">Praxis</h3>
-        <p style="color: white">Изучение инструментария, языка программирования, работа в команде под руководством ментора.</p>
+        <p style="color: white">Изучение инструментария, технологий программирования и дизайна, работа в команде под руководством профессионала.</p>
         <br>
-        <a href="" class="mr-2"><img src="https://cdn.discordapp.com/attachments/760372831946670104/839697269158182922/insta_logo.png" width="25px"></a>
-        <a href="" class="mr-2"><img src="https://cdn.discordapp.com/attachments/760372831946670104/839697265635622922/twitter_logo.png" width="25px"></a>
-        <a href="" class="mr-2"><img src="https://cdn.discordapp.com/attachments/760372831946670104/839697266490605588/youtube_logo.png" width="25px"></a>
+        <a href="https://www.instagram.com/mpityakutia/?hl=ru" class="mr-2"><img src="https://cdn.discordapp.com/attachments/760372831946670104/839697269158182922/insta_logo.png" width="25px"></a>
+        <a href="https://twitter.com/" class="mr-2"><img src="https://cdn.discordapp.com/attachments/760372831946670104/839697265635622922/twitter_logo.png" width="25px"></a>
+        <a href="https://www.youtube.com/channel/UCXgM6C_NV33xWk3Ke8GucqA" class="mr-2"><img src="https://cdn.discordapp.com/attachments/760372831946670104/839697266490605588/youtube_logo.png" width="25px"></a>
       </div>
       <div class="col-6 col-md">
         <h5 style="color: white; font-weight: 600">Быстрые ссылки</h5>
@@ -17596,20 +17809,20 @@ $jscomp.polyfill("Array.prototype.find", function(k) {
             oPaginate: {
                 sFirst: "First",
                 sLast: "Last",
-                sNext: "Next",
-                sPrevious: "Previous"
+                sNext: "Следующая",
+                sPrevious: "Предыдущая"
             },
             sEmptyTable: "No data available in table",
-            sInfo: "Showing _START_ to _END_ of _TOTAL_ entries",
-            sInfoEmpty: "Showing 0 to 0 of 0 entries",
-            sInfoFiltered: "(filtered from _MAX_ total entries)",
+            sInfo: "Показано _START_ по _END_ из _TOTAL_ учеников",
+            sInfoEmpty: "Показано с 0 по 0 из 0 учеников",
+            sInfoFiltered: "(Отфильтровано из _MAX_ total учеников)",
             sInfoPostFix: "",
             sDecimal: "",
             sThousands: ",",
-            sLengthMenu: "Show _MENU_ entries",
+            sLengthMenu: "Показать _MENU_ учеников",
             sLoadingRecords: "Loading...",
             sProcessing: "Processing...",
-            sSearch: "Search:",
+            sSearch: "Поиск по рейтингу:",
             sSearchPlaceholder: "",
             sUrl: "",
             sZeroRecords: "No matching records found"
@@ -18209,3 +18422,8 @@ $jscomp.polyfill("Array.prototype.find", function(k) {
 } );
 </script>
 
+<script type="text/javascript">
+    $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
